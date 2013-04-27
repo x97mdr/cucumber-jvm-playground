@@ -1,0 +1,22 @@
+@charset "utf-8";
+  
+/** Screen and print CSS **/
+@media screen,print {
+}
+
+/** Screen-only CSS **/
+@media screen {
+
+	fieldset legend span {
+	 	width: 680px;
+		display: inline-block;  
+	}
+
+	fieldset legend span.mandatory {
+		display: inline;
+	}
+}
+
+/** Print-only CSS **/
+@media print {
+}

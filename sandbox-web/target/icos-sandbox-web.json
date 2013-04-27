@@ -1,0 +1,236 @@
+[
+  {
+    "id": "entering-new-survey-information",
+    "tags": [
+      {
+        "name": "@txn",
+        "line": 1
+      },
+      {
+        "name": "@active",
+        "line": 1
+      }
+    ],
+    "description": "In order to enter the information that I receive from a client about a new survey they want undertaken into the system\r\nAs a collection front door manager\r\nI want to enter certain tombstone information that applies to the entire survey\r\n\r\n\u003c\u003cAcceptance Criteria:\u003e\u003e\r\n\r\n* I should be able to navigate to the new survey screen from the main menu\r\n\r\n* I should have the option to enter tombstone information about the survey (name, acronym, type, client division, program element code, mandatory/voluntary)",
+    "name": "Entering New Survey Information",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "description": "",
+        "name": "Facts about divisions",
+        "keyword": "Background",
+        "line": 13,
+        "steps": [
+          {
+            "result": {
+              "duration": 156607365,
+              "status": "passed"
+            },
+            "name": "the following divisions exist",
+            "keyword": "Given ",
+            "line": 15,
+            "match": {
+              "location": "StepDefs.the_following_divisions_exist(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "English Name",
+                  "French Name",
+                  "English Acronym",
+                  "French Acronym"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Demography Division",
+                  "Division de la démographie",
+                  "DEM",
+                  "DEM"
+                ],
+                "line": 17
+              }
+            ]
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "id": "entering-new-survey-information;a-new-survey",
+        "description": "",
+        "name": "A new survey",
+        "keyword": "Scenario",
+        "line": 19,
+        "steps": [
+          {
+            "name": "there are no existing surveys",
+            "keyword": "Given ",
+            "line": 21
+          },
+          {
+            "name": "I register a new survey with the following information",
+            "keyword": "When ",
+            "line": 22,
+            "rows": [
+              {
+                "cells": [
+                  "English Name",
+                  "French Name",
+                  "English Acronym",
+                  "French Acronym",
+                  "Type of Survey",
+                  "Client Division",
+                  "Participation",
+                  "Program Elements"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "General Social Survey",
+                  "Enquête sociale générale",
+                  "GSS",
+                  "ESG",
+                  "Social",
+                  "DEM",
+                  "voluntary",
+                  "1430"
+                ],
+                "line": 24
+              }
+            ]
+          },
+          {
+            "name": "the surveys are created",
+            "keyword": "Then ",
+            "line": 25
+          },
+          {
+            "result": {
+              "duration": 1690721,
+              "status": "passed"
+            },
+            "name": "a confirmation message is displayed saying: \"The General Social Survey has been successfully added.\"",
+            "keyword": "And ",
+            "line": 26,
+            "match": {
+              "arguments": [
+                {
+                  "val": "The General Social Survey has been successfully added.",
+                  "offset": 45
+                }
+              ],
+              "location": "StepDefs.a_confirmation_message_is_displayed_saying(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "name": "Facts about divisions",
+        "keyword": "Background",
+        "line": 13,
+        "steps": [
+          {
+            "result": {
+              "duration": 4961682,
+              "status": "passed"
+            },
+            "name": "the following divisions exist",
+            "keyword": "Given ",
+            "line": 15,
+            "match": {
+              "location": "StepDefs.the_following_divisions_exist(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "English Name",
+                  "French Name",
+                  "English Acronym",
+                  "French Acronym"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Demography Division",
+                  "Division de la démographie",
+                  "DEM",
+                  "DEM"
+                ],
+                "line": 17
+              }
+            ]
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "id": "entering-new-survey-information;restrictions-on-types-of-surveys",
+        "description": "",
+        "name": "Restrictions on types of surveys",
+        "keyword": "Scenario",
+        "line": 28,
+        "steps": [
+          {
+            "name": "there are no existing surveys",
+            "keyword": "Given ",
+            "line": 30
+          },
+          {
+            "name": "I select a type of survey to enter",
+            "keyword": "When ",
+            "line": 31
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "I should be presented the following options for survey type",
+            "keyword": "Then ",
+            "line": 32,
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Survey Type"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Business"
+                ],
+                "line": 34
+              },
+              {
+                "cells": [
+                  "Social"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "Agricultural"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "Other"
+                ],
+                "line": 37
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "SurveyPlanning\\CreatingSurveys\\EnteringNewSurveys.feature"
+  }
+]

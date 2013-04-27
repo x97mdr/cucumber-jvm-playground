@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio 6.1.16.0 - FREE Community Edition (http://www.liquid-technologies.com)-->
+<xs:schema xmlns:chl="http://www.statcan.gc.ca/census/fms/chl" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.statcan.gc.ca/census/fms/chl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="message" type="chl:messageType" />
+  <xs:element name="ackMessage" type="chl:ackMessageType" />
+  <xs:complexType name="messageType">
+    <xs:sequence>
+      <xs:element name="actionRequest" type="chl:actionRequestType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ackMessageType">
+    <xs:sequence maxOccurs="unbounded">
+      <xs:element name="actionRequestNumber" type="chl:actionRequestNumberType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actionRequestType">
+    <xs:sequence>
+      <xs:element name="requestSourceId" type="chl:requestSourceIdType" />
+      <xs:element name="censusTypeId" type="chl:censusTypeIdType" />
+      <xs:element name="reasonId" type="chl:reasonIdType" />
+      <xs:element name="communicationLanguageId" type="chl:officialLanguageIdType" />
+      <xs:element minOccurs="0" name="vrLineNoProvinceId" type="chl:provinceIdType" />
+      <xs:element minOccurs="0" name="vrLineNoCensusDivisionId" type="chl:integer2Digits" />
+      <xs:element minOccurs="0" name="vrLineNoCensusCollUnitId" type="chl:integer4Digits" />
+      <xs:element minOccurs="0" name="vrLinkedCollectionUnitSid" type="chl:integer8Digits" />
+      <xs:element minOccurs="0" name="vrLineNumberVn" type="chl:integer1Digit" />
+      <xs:element minOccurs="0" name="vrLineNoNumber" type="chl:integer4Digits" />
+      <xs:element minOccurs="0" name="vrLineNumberBlock" type="chl:integer4Digits" />
+      <xs:element minOccurs="0" name="frameId" type="chl:integer8Digits" />
+      <xs:element minOccurs="0" name="collectionMethodId" type="chl:collectionMethodIdType" />
+      <xs:element minOccurs="0" name="crewLeaderDistrictId" type="chl:integer4Digits" />
+      <xs:element minOccurs="0" name="localCensusOfficeId" type="chl:integer4Digits" />
+      <xs:element minOccurs="0" name="questionnaireTypeId" type="chl:questionnaireTypeIdType" />
+      <xs:element minOccurs="0" name="questionnaireRespondentTypeId" type="chl:questionnaireRespondentTypeIdType" />
+      <xs:element minOccurs="0" name="operatorName" type="xs:string" />
+      <xs:element minOccurs="0" name="farmName" type="xs:string" />
+      <xs:element minOccurs="0" name="civicNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="civicRoadName" type="xs:string" />
+      <xs:element minOccurs="0" name="civicRoadType" type="xs:string" />
+      <xs:element minOccurs="0" name="civicRoadDirection" type="xs:string" />
+      <xs:element minOccurs="0" name="civicApartmentNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="civicCity" type="xs:string" />
+      <xs:element minOccurs="0" name="civicProvinceId" type="chl:provinceIdType" />
+      <xs:element minOccurs="0" name="civicPostalCode" type="xs:string" />
+      <xs:element minOccurs="0" name="givenName" type="xs:string" />
+      <xs:element minOccurs="0" name="surname" type="xs:string" />
+      <xs:element minOccurs="0" name="areaCode" type="xs:string" />
+      <xs:element minOccurs="0" name="phoneNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="bestTimeToCallId" type="chl:bestTimeToCallIdType" />
+      <xs:element minOccurs="0" name="mailingRoadName1" type="xs:string" />
+      <xs:element minOccurs="0" name="mailingRoadName2" type="xs:string" />
+      <xs:element minOccurs="0" name="mailingCity" type="xs:string" />
+      <xs:element minOccurs="0" name="mailingProvinceId" type="chl:mailingProvinceIdType" />
+      <xs:element minOccurs="0" name="mailingCountryId" type="chl:countryIdType" />
+      <xs:element minOccurs="0" name="mailingPostalCode" type="xs:string" />
+      <xs:element minOccurs="0" name="dwellingBuildId" type="chl:truthIdType" />
+      <xs:element minOccurs="0" name="nearestIntersections" type="xs:string" />
+      <xs:element minOccurs="0" name="drivingDirections" type="xs:string" />
+      <xs:element minOccurs="0" name="landmarks" type="xs:string" />
+      <xs:element minOccurs="0" name="questionnaireLanguageId" type="chl:officialLanguageIdType" />
+      <xs:element minOccurs="0" name="spokenLanguageId" type="chl:spokenLanguageIdType" />
+      <xs:element minOccurs="0" name="otherSpokenLanguage" type="xs:string" />
+      <xs:element minOccurs="0" name="questionnaireFormatId" type="chl:questionnaireFormatIdType" />
+      <xs:element minOccurs="0" name="privateDwellingFlag" type="chl:privateDwellingFlagType" />
+      <xs:element minOccurs="0" name="specialSampleFlag" type="chl:intBooleanType" />
+      <xs:element minOccurs="0" name="secureAccessCode" type="chl:secureAccessCodeType" />
+      <xs:element name="linkFlag" type="chl:linkIdType" />
+      <xs:element name="enterStartDate" type="xs:dateTime" />
+      <xs:element name="enterEndDate" type="xs:dateTime" />
+      <xs:element name="actionRequestEvents" type="chl:actionRequestEventsType" />
+    </xs:sequence>
+    <xs:attribute name="actionRequestNumber">
+      <xs:simpleType>
+        <xs:restriction base="chl:actionRequestNumberType">
+          <xs:minLength value="7" />
+          <xs:maxLength value="7" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:simpleType name="integer1Digit">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="9" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="integer2Digits">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="99" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="integer4Digits">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="9999" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="integer7Digits">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="9999999" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="integer8Digits">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="99999999" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="intBooleanType">
+    <xs:restriction base="xs:short">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="actionRequestNumberType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="requestSourceIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="censusTypeIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="reasonIdType">
+    <xs:restriction base="xs:short">
+      <xs:enumeration value="100" />
+      <xs:enumeration value="101" />
+      <xs:enumeration value="102" />
+      <xs:enumeration value="103" />
+      <xs:enumeration value="104" />
+      <xs:enumeration value="105" />
+      <xs:enumeration value="106" />
+      <xs:enumeration value="107" />
+      <xs:enumeration value="108" />
+      <xs:enumeration value="109" />
+      <xs:enumeration value="110" />
+      <xs:enumeration value="200" />
+      <xs:enumeration value="201" />
+      <xs:enumeration value="300" />
+      <xs:enumeration value="301" />
+      <xs:enumeration value="302" />
+      <xs:enumeration value="400" />
+      <xs:enumeration value="500" />
+      <xs:enumeration value="501" />
+      <xs:enumeration value="502" />
+      <xs:enumeration value="600" />
+      <xs:enumeration value="601" />
+      <xs:enumeration value="602" />
+      <xs:enumeration value="603" />
+      <xs:enumeration value="604" />
+      <xs:enumeration value="700" />
+      <xs:enumeration value="800" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="officialLanguageIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="2" />
+      <xs:maxInclusive value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="provinceIdType">
+    <xs:restriction base="xs:short">
+      <xs:enumeration value="10" />
+      <xs:enumeration value="11" />
+      <xs:enumeration value="12" />
+      <xs:enumeration value="13" />
+      <xs:enumeration value="24" />
+      <xs:enumeration value="35" />
+      <xs:enumeration value="46" />
+      <xs:enumeration value="47" />
+      <xs:enumeration value="48" />
+      <xs:enumeration value="59" />
+      <xs:enumeration value="60" />
+      <xs:enumeration value="61" />
+      <xs:enumeration value="62" />
+      <xs:enumeration value="99" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="collectionMethodIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="7" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="questionnaireTypeIdType">
+    <xs:restriction base="xs:short">
+      <xs:enumeration value="1" />
+      <xs:enumeration value="2" />
+      <xs:enumeration value="3" />
+      <xs:enumeration value="4" />
+      <xs:enumeration value="5" />
+      <xs:enumeration value="6" />
+      <xs:enumeration value="7" />
+      <xs:enumeration value="8" />
+      <xs:enumeration value="9" />
+      <xs:enumeration value="10" />
+      <xs:enumeration value="11" />
+      <xs:enumeration value="12" />
+      <xs:enumeration value="14" />
+      <xs:enumeration value="15" />
+      <xs:enumeration value="16" />
+      <xs:enumeration value="17" />
+      <xs:enumeration value="18" />
+      <xs:enumeration value="19" />
+      <xs:enumeration value="20" />
+      <xs:enumeration value="91" />
+      <xs:enumeration value="92" />
+      <xs:enumeration value="93" />
+      <xs:enumeration value="94" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="questionnaireRespondentTypeIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="bestTimeToCallIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mailingProvinceIdType">
+    <xs:restriction base="xs:short">
+      <xs:enumeration value="10" />
+      <xs:enumeration value="11" />
+      <xs:enumeration value="12" />
+      <xs:enumeration value="13" />
+      <xs:enumeration value="24" />
+      <xs:enumeration value="35" />
+      <xs:enumeration value="46" />
+      <xs:enumeration value="47" />
+      <xs:enumeration value="48" />
+      <xs:enumeration value="59" />
+      <xs:enumeration value="60" />
+      <xs:enumeration value="61" />
+      <xs:enumeration value="62" />
+      <xs:enumeration value="99" />
+      <xs:enumeration value="100" />
+      <xs:enumeration value="101" />
+      <xs:enumeration value="102" />
+      <xs:enumeration value="103" />
+      <xs:enumeration value="104" />
+      <xs:enumeration value="105" />
+      <xs:enumeration value="106" />
+      <xs:enumeration value="107" />
+      <xs:enumeration value="108" />
+      <xs:enumeration value="109" />
+      <xs:enumeration value="110" />
+      <xs:enumeration value="111" />
+      <xs:enumeration value="112" />
+      <xs:enumeration value="113" />
+      <xs:enumeration value="114" />
+      <xs:enumeration value="115" />
+      <xs:enumeration value="116" />
+      <xs:enumeration value="117" />
+      <xs:enumeration value="118" />
+      <xs:enumeration value="119" />
+      <xs:enumeration value="120" />
+      <xs:enumeration value="121" />
+      <xs:enumeration value="122" />
+      <xs:enumeration value="123" />
+      <xs:enumeration value="124" />
+      <xs:enumeration value="125" />
+      <xs:enumeration value="126" />
+      <xs:enumeration value="127" />
+      <xs:enumeration value="128" />
+      <xs:enumeration value="129" />
+      <xs:enumeration value="130" />
+      <xs:enumeration value="131" />
+      <xs:enumeration value="132" />
+      <xs:enumeration value="133" />
+      <xs:enumeration value="134" />
+      <xs:enumeration value="135" />
+      <xs:enumeration value="136" />
+      <xs:enumeration value="137" />
+      <xs:enumeration value="138" />
+      <xs:enumeration value="139" />
+      <xs:enumeration value="140" />
+      <xs:enumeration value="141" />
+      <xs:enumeration value="142" />
+      <xs:enumeration value="143" />
+      <xs:enumeration value="144" />
+      <xs:enumeration value="145" />
+      <xs:enumeration value="146" />
+      <xs:enumeration value="147" />
+      <xs:enumeration value="148" />
+      <xs:enumeration value="149" />
+      <xs:enumeration value="150" />
+      <xs:enumeration value="151" />
+      <xs:enumeration value="152" />
+      <xs:enumeration value="153" />
+      <xs:enumeration value="154" />
+      <xs:enumeration value="155" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="countryIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="secureAccessCodeType">
+    <xs:restriction base="xs:string">
+      <xs:length value="15" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="truthIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="spokenLanguageIdType">
+    <xs:restriction base="xs:int">
+      <xs:enumeration value="4" />
+      <xs:enumeration value="5" />
+      <xs:enumeration value="6" />
+      <xs:enumeration value="7" />
+      <xs:enumeration value="8" />
+      <xs:enumeration value="9" />
+      <xs:enumeration value="10" />
+      <xs:enumeration value="11" />
+      <xs:enumeration value="12" />
+      <xs:enumeration value="13" />
+      <xs:enumeration value="14" />
+      <xs:enumeration value="15" />
+      <xs:enumeration value="16" />
+      <xs:enumeration value="17" />
+      <xs:enumeration value="18" />
+      <xs:enumeration value="19" />
+      <xs:enumeration value="20" />
+      <xs:enumeration value="21" />
+      <xs:enumeration value="22" />
+      <xs:enumeration value="23" />
+      <xs:enumeration value="24" />
+      <xs:enumeration value="25" />
+      <xs:enumeration value="26" />
+      <xs:enumeration value="27" />
+      <xs:enumeration value="28" />
+      <xs:enumeration value="29" />
+      <xs:enumeration value="30" />
+      <xs:enumeration value="31" />
+      <xs:enumeration value="32" />
+      <xs:enumeration value="33" />
+      <xs:enumeration value="34" />
+      <xs:enumeration value="35" />
+      <xs:enumeration value="36" />
+      <xs:enumeration value="37" />
+      <xs:enumeration value="38" />
+      <xs:enumeration value="39" />
+      <xs:enumeration value="40" />
+      <xs:enumeration value="41" />
+      <xs:enumeration value="42" />
+      <xs:enumeration value="43" />
+      <xs:enumeration value="44" />
+      <xs:enumeration value="45" />
+      <xs:enumeration value="46" />
+      <xs:enumeration value="47" />
+      <xs:enumeration value="48" />
+      <xs:enumeration value="49" />
+      <xs:enumeration value="50" />
+      <xs:enumeration value="51" />
+      <xs:enumeration value="52" />
+      <xs:enumeration value="53" />
+      <xs:enumeration value="54" />
+      <xs:enumeration value="55" />
+      <xs:enumeration value="58" />
+      <xs:enumeration value="59" />
+      <xs:enumeration value="60" />
+      <xs:enumeration value="61" />
+      <xs:enumeration value="62" />
+      <xs:enumeration value="63" />
+      <xs:enumeration value="64" />
+      <xs:enumeration value="65" />
+      <xs:enumeration value="66" />
+      <xs:enumeration value="67" />
+      <xs:enumeration value="99" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="questionnaireFormatIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="linkIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="privateDwellingFlagType">
+    <xs:restriction base="xs:short">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="actionRequestEventsType">
+    <xs:sequence maxOccurs="unbounded">
+      <xs:element name="actionRequestEvent" type="chl:actionRequestEventType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actionRequestEventType">
+    <xs:sequence>
+      <xs:element name="eventOnDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="actionRequestStatus" type="chl:actionRequestStatusType" />
+      <xs:element minOccurs="0" name="actionRequestComment" type="chl:actionRequestCommentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actionRequestAssignmentType">
+    <xs:sequence>
+      <xs:element name="assignedToUserAssignmentId" type="xs:integer" />
+      <xs:element name="assignedByUserAssignmentId" type="xs:integer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actionRequestStatusType">
+    <xs:sequence>
+      <xs:element name="statusCodeId" type="chl:statusCodeIdType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="statusCodeIdType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
+      <xs:maxInclusive value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="actionRequestCommentType">
+    <xs:sequence>
+      <xs:element name="comment" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

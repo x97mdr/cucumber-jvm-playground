@@ -1,0 +1,79 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <!-- CUSTOM ACTION MAPPER -->
+    
+	<bean type="org.apache.struts2.dispatcher.mapper.ActionMapper" name="icosSb"
+		class="ca.statcan.happyf.struts2.url.ClfActionMapper" />
+    <constant name="struts.mapper.class" value="icosSb" />
+    <constant name="struts.mapper.alwaysSelectFullNamespace" value="true" />
+
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.ui.theme" value="css_xhtml" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.url.includeParams" value="none" />
+
+    <constant name="struts.convention.action.disableScanning" value="false" />
+    <constant name="struts.convention.action.disableJarScanning" value="false" />
+    <constant name="struts.convention.action.includeJars" value=".*sandbox-common.*" />
+    <constant name="struts.convention.package.locators.basePackage" value="ca.statcan" />
+    <constant name="struts.convention.default.parent.package" value="default" />
+    <constant name="struts.convention.package.locators" value="web" />
+
+    <constant name="struts.freemarker.mru.max.strong.size" value="250" />
+    <constant name="struts.freemarker.templatesCache.updateDelay" value="60000" />
+
+    <bean type="org.apache.struts2.convention.ActionNameBuilder" name="default"
+        class="org.apache.struts2.convention.DefaultActionNameBuilder" />
+    <constant name="struts.convention.actionNameBuilder" value="default" />
+
+    <constant name="struts.multipart.maxSize" value="52428800" />
+
+    <package name="default" extends="struts-default" namespace="">
+
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+            <result-type name="flashRedirect" class="ca.statcan.happyf.struts2.FlashResult" />
+            <result-type name="json" class="org.apache.struts2.json.JSONResult" />
+        </result-types>
+
+        <interceptors>
+            <interceptor name="flash" class="ca.statcan.happyf.struts2.FlashInterceptor" />
+            <interceptor-stack name="icosSbPreTokenStack">
+                <interceptor-ref name="exception" />
+                <interceptor-ref name="i18n" />
+                <interceptor-ref name="servletConfig" />
+                <interceptor-ref name="prepare" />
+                <interceptor-ref name="params">
+                    <param name="excludeParams">dojo\..*,^struts\..*,^d-\d+.*,isAlert,__checkbox_.*</param>
+                </interceptor-ref>
+            </interceptor-stack>
+            <interceptor-stack name="icosSbPostTokenStack">
+                <interceptor-ref name="validation">
+                    <param name="validateAnnotatedMethodOnly">true</param>
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+                <interceptor-ref name="flash" />
+            </interceptor-stack>
+            <interceptor-stack name="icosSbStack">
+                <interceptor-ref name="icosSbPreTokenStack" />
+                <interceptor-ref name="icosSbPostTokenStack" />
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="icosSbStack" />
+
+        <global-results>
+           <result name="self" type="flashRedirect">
+				<param name="includeGetParams">true</param>
+			</result>
+        </global-results>
+    </package>
+
+</struts>

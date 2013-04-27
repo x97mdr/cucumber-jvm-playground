@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@media screen,print {
+	
+}
+
+/** Screen-only CSS **/
+@media screen {
+
+}
+
+/** Print-only CSS **/
+@media print {
+}

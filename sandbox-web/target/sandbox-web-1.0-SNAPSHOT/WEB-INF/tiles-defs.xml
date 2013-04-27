@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+    <!-- Single Column Layout -->
+    <definition name="layout.1Column" template="/jsp/template/layout/1Column.jsp">
+        <put-attribute name="preHeading" value="/jsp/template/tiles/blank.jsp" />
+        <put-attribute name="KEY_PAGE_HEADING" value="" type="string" />
+        <put-attribute name="head" value="/jsp/template/tiles/header/head.jsp" />
+        <put-attribute name="header" value="/jsp/template/tiles/header/header_full.jsp" />
+        <put-attribute name="validation" value="/jsp/template/tiles/validation.jsp" />
+        <put-attribute name="content" value="/jsp/template/tiles/blank.jsp" />
+        <put-attribute name="footer" value="/jsp/template/tiles/footer/footer.jsp" />
+    </definition>
+
+</tiles-definitions>

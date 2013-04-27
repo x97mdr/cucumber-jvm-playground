@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="myFirst.page" extends="layout.1Column">
+		<put-attribute name="KEY_PAGE_HEADING" value="ca.statcan.icos.sandbox.firstAction" type="string" />
+		<put-attribute name="PAGE_HEADING_CLASS" value="hd-add-survey" type="string" />
+		<put-attribute name="content" value="/jsp/myFirst.jsp" />
+	</definition>
+
+</tiles-definitions>

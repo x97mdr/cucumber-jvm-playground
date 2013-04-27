@@ -1,0 +1,3794 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js"><!-- InstanceBegin template="/Templates/CMP - 1 Column.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--<![endif]--><head>
+<meta charset="utf-8" />
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions -->
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Surveys - Collection Management Portal</title>
+            <!-- InstanceEndEditable -->
+
+<link rel="shortcut icon" href="../../dist/theme-gcwu-fegc/images/favicon.ico" />
+<meta name="description" content="English description / Description en anglais" />
+<meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
+<meta name="dcterms.title" content="English title / Titre en anglais" />
+<meta name="dcterms.issued" title="W3CDTF" content="Date published (YYYY-MM-DD) / Date de publication (AAAA-MM-JJ)" />
+<meta name="dcterms.modified" title="W3CDTF" content="Date modified (YYYY-MM-DD) / Date de modification (AAAA-MM-JJ)" />
+<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
+<meta name="dcterms.language" title="ISO639-2" content="eng" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+<script src="../../dist/js/jquery.min.js"></script>
+<script src="../../dist/js/jquery-ui.min.js"></script>
+<script src="../../dist/js/dependencies/statcan/jquery.maskedinput.custom.js"></script>
+<!-- InstanceBeginEditable name="Head-JS" -->
+<script src="../../dist/js/dependencies/datatables/datatables-min.js"></script>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="IEPaths" -->
+<!--[if IE 8]>
+<script src="../../dist/js/polyfills/html5shiv-min.js"></script> 
+<link rel="stylesheet" href="../../dist/grids/css/util-ie-min.css" /> 
+<link rel="stylesheet" href="../../dist/js/css/pe-ap-ie-min.css" /> 
+<link rel="stylesheet" href="../../dist/theme-gcwu-fegc/css/theme-ie-min.css" />
+<![endif]-->
+<!-- InstanceEndEditable -->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="../../dist/grids/css/util-min.css" />
+<link rel="stylesheet" href="../../dist/js/css/pe-ap-min.css" />
+<link rel="stylesheet" href="../../dist/theme-gcwu-fegc/css/theme-min.css" />
+<!--<![endif]-->
+<noscript><link rel="stylesheet" href="../../dist/theme-gcwu-fegc/css/theme-ns-min.css" /></noscript>
+<!-- CustomScriptsCSSStart -->
+<link href="../../css/themes/statcan/jquery-ui.css" rel="stylesheet" />
+<link href="../../css/cmp-pgc.css" rel="stylesheet" />
+<!-- InstanceBeginEditable name="Head-CSS" -->
+<link rel="stylesheet" type="text/css" href="../../dist/js/dependencies/datatables/datatables-min.css">
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="IsFieldStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsSeniorFieldStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsRecruitmentStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsCollectionSurveyManager" type="boolean" value="true" -->
+<!-- InstanceParam name="IsTelephoneOperator" type="boolean" value="false" -->
+<!-- InstanceParam name="IsSeniorTelephoneOperator" type="boolean" value="false" -->
+<!-- InstanceParam name="IsOfficeStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsPayStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsSupervisor" type="boolean" value="false" -->
+<!-- InstanceParam name="IsSiteManager" type="boolean" value="false" -->
+<!-- InstanceParam name="IsExecutive" type="boolean" value="false" -->
+<!-- CustomScriptsCSSEnd -->
+</head>
+
+<body>
+
+<div id="wb-body">
+<div id="wb-skip">
+<ul id="wb-tphp">
+<li id="wb-skip1"><a href="#wb-cont">Skip to main content</a></li>
+<li id="wb-skip2"><a href="#wb-nav">Skip to footer</a></li>
+</ul>
+</div>
+
+<div id="wb-head"><div id="wb-head-in"><header>
+<!-- HeaderStart -->
+<nav role="navigation"><div id="gcwu-gcnb"><h2><span>Site</span> menu</h2><div id="gcwu-gcnb-in"><div id="gcwu-gcnb-fip">
+<div id="gcwu-sig"><div id="gcwu-sig-in"><div id="gcwu-sig-eng" title="Government of Canada"><img src="../../dist/theme-gcwu-fegc/images/sig-eng.gif" width="214" height="20" alt="Government of Canada" /></div></div></div>
+<ul>
+<li id="gcwu-gcnb1"><a  target="_blank" rel="external" href="http://www.canada.gc.ca/menu-eng.html">Canada.gc.ca</a></li>
+<li id="gcwu-gcnb2"><a  target="_blank" rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml">Services</a></li>
+<li id="gcwu-gcnb3"><a  target="_blank" rel="external" href="http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-eng.html">Departments</a></li>
+<li id="gcwu-gcnb-lang"><a href="#" lang="fr">Français</a></li>
+</ul>
+</div></div></div></nav>
+
+<div id="gcwu-bnr" role="banner"><div id="gcwu-bnr-in">
+<div id="gcwu-wmms"><div id="gcwu-wmms-in"><div id="gcwu-wmms-fip" title="Symbol of the Government of Canada"><img src="../../dist/theme-gcwu-fegc/images/wmms.gif" width="126" height="30"  alt="Symbol of the Government of Canada" /></div></div></div>
+<div id="gcwu-title"><p id="gcwu-title-in"><a target="_blank" href="#">Collection Management Portal</a></p></div>
+
+<section role="search"><div id="gcwu-srchbx"><h2>Search</h2>
+<form action="#" method="post"><div id="gcwu-srchbx-in">
+<label for="gcwu-srch">Search website</label><input id="gcwu-srch" name="gcwu-srch" type="search" value="" size="27" maxlength="150" />
+<input id="gcwu-srch-submit" name="gcwu-srch-submit" type="submit" value="Search" data-icon="search" />
+</div></form>
+</div></section>
+</div></div>
+
+<nav role="navigation">
+<div id="gcwu-psnb"><h2><span>Site</span> menu</h2><div id="gcwu-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
+<ul class="mb-menu" data-ajax-replace="../menu/all.html">
+<li><section><h3><a href="../all/myInbox.html">Inbox</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+    <li><a href="#">Send a message</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+
+<li><section><h3><a href="surveys.html">Surveys</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+    <li><a href="addSurvey.html">Add a survey</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+ 
+
+ 
+
+<li><section><h3><a href="#">Human resources</a></h3>
+<div class="mb-sm">
+
+
+<div class="span-2">
+	<h4><a href="#">Administrative</a></h4>
+	<ul>
+        <li><a href="../fieldStaff/myProfile.html">View/edit my profile</a></li>	
+        <li><a href="../all/viewOrgChart.html">View the organizational chart</a></li>
+        
+        
+   		
+        
+        <li><a href="../fieldStaff/staffSearch/staffSearch-basic.html">Search for staff</a></li>
+        
+		 
+		
+		
+        
+        		
+		
+		
+	</ul>
+</div>
+
+</div>
+</section>
+</li>
+
+
+<li><section><h3><a href="#">Shipping</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+    <li><a href="#">Create a shipment</a></li>
+    <li><a href="#">Recently sent shipments</a></li>   
+    <li><a href="#">Search shipments</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+
+<li><section><h3><a href="#">Tools</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+	<li><a href="#">Reports</a></li>
+    <li><a href="#">Update my system preferences</a></li>
+    <li><a href="#">Change my password</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+
+<li><section><h3><a href="#">Help</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+	<li><a href="#">Reference library</a></li>
+    <li><a href="#">Contact us</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+</ul>
+</div></div></div></div>
+
+<div id="gcwu-bc"><h2>Breadcrumb trail</h2><div id="gcwu-bc-in">
+<ol>
+<li><a href="#">Home</a></li>
+<!-- InstanceBeginEditable name="Breadcrumb" -->
+<li>Surveys</li>
+<!-- InstanceEndEditable -->
+</ol>
+<div id="app-logout">
+	<h2>Access to account profile and logout</h2>
+    <ul>
+    	<li class="pipe">
+        
+        
+        
+        	<a class="link-profile-f" href="#">Sylvie Lauzon</a>  
+		
+        
+        
+        
+          
+          
+             	
+        
+        
+        </li>
+    	<li><a class="link-logout" href="#">Logout</a></li>	 
+    </ul>
+</div>
+</div>
+</div>
+</nav>
+<!-- HeaderEnd -->
+</header></div></div>
+
+<div id="wb-core"><div id="wb-core-in" class="equalize">
+<div id="wb-main" role="main">
+  <div id="wb-main-in">
+<!-- MainContentStart -->
+<!-- InstanceBeginEditable name="Content" -->
+<h1 id="cn-cont" class="hd-survey-planning">Surveys</h1>
+<form id="survey-table-form" action="exportList.html" method="post">
+
+<noscript id="hidden-survey-search">
+<div>
+<label for="survey-search">Search: </label> <input id="survey-search" type="text" value=""><input type="submit" value="Search">
+| <a href="viewSurveys.html">View all surveys</a>
+</div>
+</noscript>
+<a href="top"></a>
+<table id="surveyTable" border="1">
+  <caption>
+	This table lists all surveys and their properties (column headings). The surveys are listed in alphabetical order by the survey name.
+  </caption>
+  <thead>
+        <tr>
+            <th class="parent-checkbox" scope="col"></th>
+            <th class="survey-name" scope="col"><label id="survey-name-label">Survey Name</label></th>
+            <th scope="col"><label id="survey-type-label">Survey Type</label></th>
+            <th scope="col"><label id="participation-label">Participation</label></th>
+            <th class="client-division" scope="col"><label id="client-division-label">Client Division</label></th>
+            <th scope="col"><label id="pe-code-label"><abbr title="Program Element">PE</abbr> Code</label></th>
+        </tr>
+  </thead>
+  <tbody>
+        <tr>
+            <td><input id="survey-1" type="checkbox" value=""></td>
+            <td><label for="survey-1"><a href="#">Agriculture Taxation Data Program (<abbr title="Agriculture Taxation Data Program">ATDP</abbr>)</a></label>
+            <div class="small-grey-text" lang="fr">Programme des données fiscales agricoles (<abbr title="Programme des données fiscales agricoles">PDFA</abbr>)</div>
+			<p class="wb-invisible">Previous survey names:</p>
+			<ul class="wb-invisible">
+				<li>Farm Taxation Data Program</li>
+				<li>Farming Taxation Survey</li>
+			</ul>
+			</td>
+            <td>Agriculture</td>
+            <td>Voluntary</td>
+            <td>Agriculture Division (<abbr title="Agriculture Division">AG</abbr>)<div class="small-grey-text" lang="fr">Division de l'agriculture (<abbr title="Division de l'agriculture">DA</abbr>)</div></td>
+            <td>2150<br />3259<br />1489</td>
+        </tr>
+        <tr>
+            <td><input id="survey-2" type="checkbox" value=""></td>
+            <td><label for="survey-2"><a href="#">Annual Survey of Manufactures and Logging (<abbr title="Annual Survey of Manufactures and Logging">ASML</abbr>)</a></label>
+            <div class="small-grey-text" lang="fr">Enquête annuelle sur les manufactures et l'exploitation forestière (<abbr title="Enquête annuelle sur les manufactures et l'exploitation forestière">EAMEF</abbr>)</div></td>
+            <td>Business</td>
+            <td>Voluntary</td>
+            <td>Industry Division (<abbr title="Industry Division">ID</abbr>) <div class="small-grey-text" lang="fr">Division de l'industrie (<abbr title="Division de l'industrie">DI</abbr>)</div></td>
+            <td>1426</td>
+        </tr>
+        <tr>
+            <td><input id="survey-3" type="checkbox" value=""></td>
+            <td><label for="survey-3"><a href="#">Canadian Survey on Disability (<abbr title="Canadian Survey on Disability">CSD</abbr>)</a></label>
+            <div class="small-grey-text" lang="fr">Enquête Canadienne sur l'incapacité (<abbr title="Enquête Canadienne sur l'incapacité">ECI</abbr>)</div></td>
+            <td>Social</td>
+            <td>Mandatory</td>
+            <td>Health Division (<abbr title="Health Division">HD</abbr>) <div class="small-grey-text" lang="fr">Division de la santé (<abbr title="Division de la santé">DS</abbr>)</div></td>
+            <td>3849<br />0235</td>
+        </tr>
+        <tr>
+            <td><input id="survey-4" type="checkbox" value=""></td>
+            <td><label for="survey-4"><a href="#">National Household Survey (<abbr title="National Household Survey">NHS</abbr>)</a></label>
+            <div class="small-grey-text" lang="fr">Enquête nationale auprès des ménages (<abbr title="Enquête nationale auprès des ménages">ENM</abbr>)</div></td>
+            <td>Other</td>
+            <td>Voluntary</td>
+            <td>Census Division (<abbr title="Census Division">CD</abbr>) <div class="small-grey-text" lang="fr">Division du recensement (<abbr title="Division du recensement">DR</abbr>)</div></td>
+            <td>3647<br />9348<br />8759<br />1112</td>
+        </tr>
+        <!-- 
+        ===
+        ===
+				DELETE TABLE ROWS BELOW
+        ===
+        ===
+        -->
+        <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>A One Day Snapshot in Canada's Correctional Facilities/Profil
+  instantané d'une journée des détenus dans les établissements correctionnels
+  pour adultes du Canada</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Agriculture
+  Division</td>
+  <td>2150<br>3259<br>1489</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Aboriginal
+  Children's Survey (ACS)/Enquête sur les enfants autochtones (EEA)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1426</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Aboriginal
+  Entrepreneurs Survey (AES)/Enquête sur les entrepreneurs autochtones</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0235</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Absence from
+  Work Survey/Enquête sur l'absence du travail</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1112</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Adult and Youth
+  Recidivism in Canada Special Study/Étude spéciale sur la récidive chez les
+  adultes et les jeunes au Canada</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1426</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Adult Education
+  and Training Survey (AETS)/Enquête sur l'éducation et sur la formation des
+  adultes (EÉFA)
+  <span style="display:none;">Steven Survey</span></td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3849<br>0235</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Air Quality
+  Indicators/Indicateurs de la qualité de l'air</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1112</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Alternative
+  Measures Survey for Youth/Enquête sur les mesures de rechange pour les
+  adolescents</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1489</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual College
+  and Related Institutions Educational Staff Survey (ACCESS)/Enquête annuelle
+  sur le personnel enseignant des collèges et établissements analogues
+  (EAPECCM)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1426</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Production
+  of Soft Drinks/Production annuelle de boissons gazeuses</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0235</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Retail
+  and Wholesale Trade Survey/Enquête annuelle sur le commerce de gros et détail</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1112</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Return
+  of Health Care Facilities-Hospitals/Rapport annuel des établissements de
+  santé - Hôpitaux</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1426</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Forestry/Enquête annuelle de la foresterie</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>2150<br>3259<br>1489</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Internet Service Providers and Related Services/Enquête annuelle sur les
+  fournisseurs de services Internet et les autres services connexes</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1426</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Investigation and Security Services/Enquête annuelle sur le secteur des
+  services d'enquêtes et de securité</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0235</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Professional Accountants/Enquête annuelle auprès des comptables
+  professionnels</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1112</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Service Industries: Automotive Repair and Maintenance Services/Enquête
+  annuelle sur les industries de services : Services de réparation et entretien
+  de véhicules automobiles</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1426</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Service Industries: Repair and Maintenance Services Excluding
+  Automotive/Enquête annuelle sur les industries de service : Services de
+  réparation et entretien excluant les véhicules automobiles</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0235</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Service Industries: Testing Laboratories/Enquête annuelle sur les
+  industries de services : Laboratoires d'essai</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1112</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Service Industries: Translation and Interpretation Services/Enquête
+  annuelle sur les industries de services : Traduction et interprétation</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1489</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Services to Buildings and Dwellings/Enquête annuelle sur le secteur des
+  services relatifs aux bâtiments et aux logements</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1426</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Survey
+  of Small For-Hire Carriers of Freight and Owner-Operators/Enquête annuelle
+  sur les petits transporteurs routiers de marchandises pour compte d'autrui et
+  les chauffeurs contractants</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0235</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Annual Trucking
+  Survey (ATS)/Enquête annuelle sur le camionnage (EAC)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3647<br>9348<br>8759<br>1112</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>April Cattle
+  Survey/Enquête d'avril sur les bovins</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>1426</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Average Fair
+  Market Value/Purchase Price for New Homes in Canada - Data from GST
+  Administrative Records/Juste valeur marchande/prix d'achat pour les
+  habitations neuves au Canada - données produites à partir des dossiers
+  administratifs de la TPS</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1490</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Biotechnology
+  Use and Development Survey/Enquête sur l'utilisation et le développement de
+  la biotechnologie</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1427</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>British Columbia
+  Smoking Survey (BCSS)/Enquête sur le tabagisme en Colombie-Britannique (ETCB)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0236</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Business Conditions
+  Survey for Heritage Institutions, Performing Arts, and Recreation and
+  Entertainment Industries/Enquête sur les perspectives du monde des affaires
+  pour le secteur : des établissements du patrimoine; des arts de la scène; de
+  divertissement et de loisirs</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1113</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Business Conditions
+  Survey for the Manufacturing Industries (BCS)/Enquête sur les perspectives du
+  monde des affaires pour les industries manufacturières (EPMA)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1427</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Business Conditions
+  Survey for the Traveller Accommodation Industry (BCS-TA)/Enquête sur les
+  perspectives du monde des affaires pour le secteur de l'hébergement des
+  voyageurs (EPMA-HV)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0236</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Business Payrolls
+  Survey (BPS)/Enquête sur la rémunération auprès des entreprises (ERE)</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1113</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canada Health
+  Survey (CHS)/Enquête santé Canada (ESC)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>2150<br>3259<br>1490</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canada Revenue
+  Agency (CRA)/Agence du revenu du Canada (ARC)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1427</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canada Revenue
+  Agency Employee Survey/Sondage auprès des employé(e)s de l'Agence du revenu
+  du Canada</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0236</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canada's Alcohol
+  and Other Drugs Survey/Enquête Canadienne sur la consommation d'alcool et
+  autres drogues</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1113</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canada-United
+  States Border Survey (CUBS)/Enquête sur la frontière canado-américaine (EFCA)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1427</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Aquaculture
+  Industry Survey/Enquête sur l'industrie canadienne de l'aquaculture</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1491</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Community
+  Health Survey - Mental Health and Well-being - Canadian Forces (CCHS)/Enquête
+  sur la santé dans les collectivités canadiennes - Santé mentale et bien-être
+  - Forces canadiennes (ESCC)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1428</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Community
+  Health Survey - Mental Health Stigma and Discrimination Content Module - Test
+  (CCHS)/Enquête sur la santé dans les collectivités canadiennes - mise à
+  l'essai - module stigmatisation et discrimination en santé mentale (ESCC)</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0237</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Community
+  Health Survey - Nutrition (CCHS)/Enquête sur la santé dans les collectivités
+  canadiennes - Nutrition (ESCC)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1114</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Composite
+  Leading Indicator (CI)/Indicateur avancé composite du Canada</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1428</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Financial
+  Capability Survey/Enquête canadienne sur les capacités financières</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0237</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Food
+  Inspection Agency Employee Survey/Sondage auprès des employés de l'Agence
+  canadienne d'inspection des aliments</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1114</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Pulp
+  and Paper Association/L'Association Canadienne des producteurs de pâtes et
+  papiers</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1491</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Survey
+  of Experiences with Primary Health Care (CSE-PHC)/Enquête canadienne sur
+  l'expérience des soins de santé primaires (ECE-SSP)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1428</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Canadian Vehicle
+  Survey (CVS)/Enquête sur les véhicules au Canada (EVC)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0237</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Changes in
+  Employment Survey (CIES)/Enquête sur les changements à l'égard de l'emploi
+  (ECEE)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1114</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Characteristics
+  of Growth Firms/Caractéristiques des entreprises en croissance</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1428</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Chemical and
+  Mineral Process Plant Price Indexes/Indices des prix des installations de
+  traitement des produits chimiques et minéraux</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>2150<br>3259<br>1492</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Chemical and
+  Petrochemical Process Plant Price Index/Indices des prix des installations de
+  traitement des produits chimiques et pétrochimiques</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1429</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Commercial and
+  Institutional Buildings Energy Use Survey (CIBEUS)/Enquête sur la
+  consommation d'énergie par les bâtiments commerciaux et institutionnels
+  (ECEICI)</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3849<br>0238</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Communities
+  Survey/Enquête sur les communautés</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1115</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Community
+  College Student Information System (CCSIS)/Système d'information statistique
+  sur la clientèle des collèges communautaires (SISCCC)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1429</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Community
+  Employment Innovation Project (CEIP)/Projet d'innovation en emploi
+  communautaire (PIEC)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0238</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Compensation
+  Sector Survey/Sondage secteur de la rémunération</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1115</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Confectionery/Confiserie</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1492</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Consolidated
+  Government Financial Assets and Liabilities/Actifs et passifs financiers
+  consolidés des administrations publiques</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1429</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Consolidated
+  Government Revenue and Expenditures/Recettes et dépenses consolidées des
+  administrations publiques</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0238</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Construction
+  Type Plywood/Contreplaqués de construction</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3647<br>9348<br>8759<br>1115</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Continuing
+  Education Survey (COED)/Enquête sur l'éducation permanente (EEP)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1429</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Contract Drilling
+  and Services to Oil and Gas Extraction Industry/Forage à forfait et services
+  relatifs à l'industrie de l'extraction du pétrole et du gaz</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1493</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Corporation
+  Financial Statistics/Statistique financière des sociétés</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1430</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Corporation
+  Taxation Statistics/Statistique fiscale des sociétés</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0239</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Corporations
+  and Labour Unions Returns Act , Part 2 - Labour Unions (CALURA)/Loi sur les
+  déclarations des corporations et des syndicats ouvriers, Partie 2 - Syndicats
+  ouvriers (CALURA)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1116</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Courts Resources,
+  Expenditures and Personnel Survey (REP)/Enquête des ressources, dépenses et
+  personnel des tribunaux (RDP)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1430</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Crime Survey/Enquête
+  sur les actes criminels</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0239</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Crop Protection
+  Survey/Enquête sur la protection des cultures</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1116</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Current Population
+  Profile/Profil de la population actuelle</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>2150<br>3259<br>1493</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Degrees, Diplomas
+  and Certificates Granted by Universities/Grades, diplômes et certificats
+  décernés par les universités</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>1430</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Direct Selling
+  in Canada/Vente directe au Canada</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0239</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Domestic Electrical
+  Appliances/Appareils électriques ménagers</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1116</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Domestic Washing
+  Machines and Clothes Dryers/Machines à laver et sécheuses à linge</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1430</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Education
+  Price Index (EPI)/Indice des prix a l'enseignement (IPE)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1494</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Education
+  Survey/Enquête sur les études</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1431</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Egg Producers
+  Survey/Enquête sur les producteurs d'oeufs</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0240</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Electric Lamps
+  (Light Sources)/Lampes électriques (sources de lumière)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1117</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Electric Power
+  Capability and Load/Puissance électrique et d'électricité</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1431</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Elementary/Secondary
+  Education Staff Survey (ESESS)/Enquête sur les caractéristiques du personnel
+  scolaire des écoles primaires et secondaires (ECEPS)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0240</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Elementary/Secondary
+  School Enrolment (ESSE)/Effectifs des écoles primaires et secondaires (EEPS)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1117</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Employment
+  Dynamics/Variations de l'emploi</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1494</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Energy Research
+  and Development Expenditures - Petroleum Firms/Dépenses de recherche et
+  développement énergétique - Sociétés pétrolières</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1431</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Estimates of
+  Total Population for Canada, the Provinces and the Territories/Estimations de
+  la population totale pour le Canada, les provinces et les territoires</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0240</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Ethnic Diversity
+  Survey (EDS)/Enquête sur la diversité ethnique (EDE)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1117</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Fabricated
+  Structural Steel Price Indexes (FSSPI)/Indices des prix de l'acier de
+  charpente semi-ouvré (IPACS)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1431</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Factory Shipments
+  of High Pressure Decorative Laminate Sheet/Livraisons départ usine de
+  feuilles ornementales stratifiées sous haute pression</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>2150<br>3259<br>1495</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Farm Income in
+  Kind by Items/Revenu agricole en nature par postes</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1432</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Farm Inputs
+  Management Survey/Enquête sur la gestion des intrants agricoles</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0241</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Farm Register
+  Update/Mise à jour du registre des fermes</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1118</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Federal Intellectual
+  Property Management Survey (FIPM)/Enquête sur la gestion de la proriété
+  intellectuelle fédérale (GPIF)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1432</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Federal Jurisdiction
+  Workplace Survey/Enquête sur les milieux de travail de compétence fédérale</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0241</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Federal Science
+  Expenditures Intended to Benefit Developing Countries/Dépenses fédérales en
+  sciences à l'intention des pays en voie de développement</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1118</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Finance Canada/Finances
+  Canada</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1495</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Financial Survey
+  of Canadian Water Carriers/Enquête financière des transporteurs par eau
+  canadiens</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1432</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Floor Tiles/Carreaux
+  et dalles de parquet</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3849<br>0241</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Food Expenditure
+  Survey (FES)/Enquête sur les dépenses alimentaires (EDA)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3647<br>9348<br>8759<br>1118</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Footwear Statistics/La
+  statistique de la chaussure</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>1432</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Freshwater
+  Quality Indicator/Indicateur de la qualité de l'eau douce</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1496</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Fuel Consumption
+  Survey/Enquête sur la consommation de carburant</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1433</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Future to Discover
+  Project (FTD)/Projet « Un avenir à découvrir »</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0242</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>General Social
+  Survey - Access to and Use of Information Communication Technology
+  (GSS)/Enquête sociale générale - L'accès et l'utilisation des technologies de
+  l'information et des communications (ESG)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1119</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>General Social
+  Survey - Education, Work and Retirement (GSS)/Enquête sociale générale - Les
+  études, le travail et la retraite (ESG)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1433</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>General Social
+  Survey - Health (GSS)/Enquête sociale générale - Santé (ESG)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0242</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Geomatics
+  Industry Survey/Enquête sur le secteur de la géomatique</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1119</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Greenhouse Gas
+  Emissions Indicator (GHG)/Indicateur des émissions de gaz à effet de serre
+  (GES)</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>2150<br>3259<br>1496</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Greenhouse Gas
+  Emissions Report/Déclarations des émissions de gaz à effet de serre</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1433</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Gross Domestic
+  Product by Industry - Annual/Produit intérieur brut par industrie - annuelle</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0242</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Gypsum Products/Produits
+  de gypse</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1119</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Hardboard/Panneaux
+  pressés</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1433</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Health and
+  Activity Limitation Survey : Institutional Component (HALS)/Enquête sur la
+  santé et les limitations d'activités : Établissements (ESLA)</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1497</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Health Promotion
+  Survey (HPS)/Enquête sur la promotion de la santé (EPS)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1434</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Health Research
+  and Development Expenditures by Therapeutic Class/Dépenses de recherche et
+  développement dans le domaine de la santé selon la catégorie thérapeutique</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0243</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Health Services
+  Access Survey (HSAS)/Enquête sur l'accès aux services de santé (EASS)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1120</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Help Wanted
+  Index Survey/Enquête sur l'indice de l'offre d'emploi</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1434</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Highway Construction
+  Price Indexes/Indices des prix de la construction routière</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3849<br>0243</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Homeowner
+  Repair and Renovation Survey (HRRS)/Enquête sur les réparations et les
+  rénovations effectuées par les propriétaires-occupants (ERRP)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1120</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Hospital Morbidity
+  Database (HMDB)/Base de données sur la morbidité hospitalière (BDMH)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1497</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Household
+  Facilities and Equipment Survey (HFE)/Enquête sur l'équipement ménager (EEM)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1434</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Household
+  Facilities by Income and Other Characteristics (HIFE)/Equipement ménager
+  selon le revenu et d'autres caractéristiques (RMEM)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0243</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Income Estimates
+  for Subprovincial Areas/Estimations du revenu dans les secteurs
+  infraprovinciaux</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1120</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Indian Claims
+  Commission Employee Survey/Sondage auprès des employé(e)s de la Commission
+  des revendications des Indiens</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1434</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Information
+  and Communications Technologies in Schools Survey (ICTSS)/Enquête sur les
+  technologies de l'information et des communications dans les écoles (ETICE)</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>2150<br>3259<br>1498</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Innovation in
+  the Food Processing Industry Survey/Enquête sur l'innovation dans l'industrie
+  de la transformation des aliments</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1435</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Intercity and
+  Rural Passenger Bus Survey/Enquête sur le transport interurbain et rural de
+  voyageurs par autobus</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0244</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>International
+  Energy Production and Reserves/Production et réserves d'énergie
+  internationale</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1121</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>International
+  Survey of Reading Skills (ISRS)/Enquête internationale sur les compétences en
+  lecture</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1435</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>International
+  Youth Survey (IYS)/Enquête internationale auprès des jeunes (EIJ)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0244</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Joint Canada/United
+  States Survey of Health (JCUSH)/Enquête conjointe Canada/États-Unis sur la
+  santé (ECCES)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1121</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Labour Cost
+  Survey/Enquête sur les coûts de main-d'oeuvre</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1498</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Labour Market
+  Activity Survey (LMAS)/Enquête sur l'activité (EA)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1435</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Language Industry
+  Survey/Enquête sur l'industrie de la langue</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0244</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Language of
+  Work Survey/Sondage sur la langue de travail</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3647<br>9348<br>8759<br>1121</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Leaf Tobacco
+  Area, Production and Value/Superficie récoltée, production et valeur du tabac
+  en feuilles</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1435</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Livestock Farm
+  Practices Survey/Enquête sur les pratiques des fermes d'élevage</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1499</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Logistics Service
+  Industries Border Survey/Enquête frontalière sur les industries des services
+  logistiques</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1436</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Longitudinal
+  Survey of Immigrants to Canada (LSIC)/Enquête longitudinale auprès des
+  immigrants du Canada (ELIC)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0245</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Maternity
+  Experiences Survey (MES)/L'Enquête sur les expériences de la maternité (EEM)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1122</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Mental Health
+  Statistics/La statistique de l'hygiène mentale</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1436</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Minority and
+  Second Language Education, Elementary and Secondary Independent
+  Schools/Enseignement dans la langue de la minorité et dans la langue seconde
+  - Écoles primaires et secondaires indépendantes</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0245</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Alcohol
+  and Drug Survey/Enquête nationale sur la consommation d'alcool et de drogue</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1122</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Child
+  Care Survey/Enquête nationale des soins aux enfants</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>2150<br>3259<br>1499</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Compensation
+  Survey/Enquête nationale sur la compensation</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>1436</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Construction
+  Industry Wage Rate Survey/Enquête nationale sur les taux salariaux dans le
+  secteur de la construction</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0245</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Electronic
+  Media Use Survey/Enquête Nationale sur l'usage des médias électroniques</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1122</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Energy
+  Board Employee Survey/Sondage auprès des employé(e)s de l'Office national de
+  l'énergie</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1436</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Farm
+  Survey (NFS)/Enquête nationale sur les fermes (ENF)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1500</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Longitudinal
+  Survey of Children and Youth (NLSCY)/Enquête longitudinale nationale sur les
+  enfants et les jeunes (ELNEJ)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1437</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Population
+  Health Survey - Household Component - Cross-sectional (NPHS)/Enquête
+  nationale sur la santé de la population - Volet ménages - transversal (ENSP)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0246</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Population
+  Health Survey - Household Component - Longitudinal (NPHS)/Enquête nationale
+  sur la santé de la population - volet ménages - longitudinal (ENSP)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1123</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Population
+  Health Survey - North Component (NPHS)/Enquête nationale sur la santé de la
+  population - Volet nord (ENSP)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1437</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Population
+  Health Survey: Health Institutions Component, Longitudinal (NPHS)/Enquête
+  nationale sur la santé de la population: Volet établissements de soins de
+  santé, longitudinal (ENSP)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0246</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Private
+  Vehicle Use Survey (NPVUS)/Enquête nationale sur l'utilisation des véhicules
+  privés</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1123</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Survey
+  of Community Sector Organizations/Enquête nationale sur les organismes du
+  secteur communautaire</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1500</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Survey
+  of Information Technology Occupations/Enquête nationale sur les professions
+  reliées aux technologies de l'information</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1437</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Survey
+  of the Work and Health of Nurses (NSWHN)/Enquête nationale sur le travail et
+  la santé du personnel infirmier (ENTSPI)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0246</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Survey
+  on Drinking and Driving/Enquête nationale sur la conduite automobile et la
+  consommation d'alcool</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1123</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>National Work
+  Injuries Statistics Program (NWISP)/Programme national de statistiques sur
+  les accidents de travail (PNSAT)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1437</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Natural Health
+  Products Survey/Enquête sur les produits de santé naturels</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>2150<br>3259<br>1501</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Nunavut Housing
+  Needs Survey/Enquête sur les besoins en logements au Nunavut</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1438</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Official Canadian
+  Government Travel Survey/Enquête officielle du gouvernement canadien sur les
+  voyages</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+
+  <td>3849<br>0247</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Official Language
+  Demand for Service Survey/Enquête sur la demande de services dans les langues
+  officielles</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1124</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Oils and Fats/Huiles
+  et matières grasses</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1438</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Ontario Adult
+  Literacy Survey (OALS)/Enquête sur l'alphabétisation des adultes en Ontario
+  (EAAO)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0247</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Ontario Child
+  Health Study (OCHS)/Étude sur la santé des jeunes ontariens (ESJO)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1124</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Ontario Employment
+  Benefits and Support Measures Survey (EBSM)/Enquête sur les prestations
+  d'emploi et les mesures de soutien en Ontario</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1501</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Ontario Material
+  Deprivation Survey (OMDS)/Enquête sur la privation matérielle en Ontario
+  (EPMO)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1438</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>P.E.I. Community
+  Access Points Survey/Enquête sur le programme d'accès communautaire I.P.E.</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3849<br>0247</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Parks Canada
+  Employee Survey/Sondage auprès des employés de Parcs Canada</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3647<br>9348<br>8759<br>1124</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Particleboard,
+  Oriented Strandboard and Fibreboard/Panneaux de particules, de lamelles
+  orientées et de fibres</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1438</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Passenger Bus
+  Statistics/Statistique du transport des voyageurs par autobus</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1502</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Passenger
+  Bus/Urban Transit Survey - Quarterly/Enquête trimestrielle sur le transport
+  des voyageurs par autobus et le transport urbain</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1439</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Periodical
+  Publishing Survey/Enquête sur l'édition du périodique</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0248</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Pilot Survey
+  on Police-Reported Hate Crimes/Enquête pilote sur les crimes haineux déclarés
+  par la police</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1125</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Post-Secondary
+  Education Participation Survey (PEPS)/Enquête sur la participation aux études
+  postsecondaires (EPEP)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1439</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Postsecondary
+  Student Survey/Enquête auprès des étudiants du niveau postsecondaire</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0248</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Precast Concrete
+  Price Indexes (PCPI)/Indices des prix du béton préfabriqué (IPBP)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1125</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Preliminary
+  Estimates of Population for Census Divisions and Census Metropolitan Areas
+  (Regression method)/Estimations provisoires de la population des divisions et
+  régions métropolitaines de recensement (Méthode de régression)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>2150<br>3259<br>1502</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Price Survey
+  of Assistive Devices For Persons With Disabilities/Enquête sur les prix des
+  appareils fonctionnels pour les personnes ayant des incapacités</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1439</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Process Cheese/Fromage
+  fondu</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0248</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Processors
+  Supplementary Report of Frozen Vegetable Intended for Re-manufacture/Rapport
+  supplémentaire des conditionneurs de légumes congelés sur les stocks destinés
+  à la retransformation</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1125</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Production and
+  Sales of Phonograph Records and Pre-Recorded Tapes in Canada/Production et
+  ventes de disques de phonographe et de rubans pré-enregistrés au Canada</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1439</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Production of
+  Selected Biscuits/Production de certains biscuits</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1503</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Production,
+  Sales and Stocks of Major Appliances/Productions, ventes et stocks
+  d'appareils ménagers</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1440</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Production,
+  Shipments and Stocks on Hand of Sawmills in British Columbia/Production,
+  livraisons et stocks en mains des scieries en Colombie-Britannique</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0249</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Property &amp;
+  Casualty Insurance Services Price Index (PCISPI)/Indice des prix des services
+  d'assurance de biens et de risques divers (IPSABRD)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1126</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Prosecutorial
+  Services in Canada/Les services en matière de poursuites au Canada</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1440</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Provincial
+  Expenditures on Education in Reform and Correctional Institutions/Dépenses
+  provinciales au titre de l'éducation dans les maisons de réhabilitation et de
+  correction</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3849<br>0249</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Provincial
+  Government Activities in the Natural Sciences/Activités du gouvernement
+  provincial dans les sciences naturelles</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1126</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Provincial
+  Wage and Salary Survey/Enquête sur les traitements et salaires dans les
+  provinces</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1503</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Public Service
+  Financial Community Survey/Enquête sur la communauté financière de la
+  fonction publique</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1440</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Pulpwood and
+  Wood Residue/Bois à pâte et déchets de bois</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0249</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Quarterly Industrial
+  Consumption of Energy Survey/Enquête trimestrielle sur la consommation
+  industrielle d'énergie</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1126</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Quarterly Survey
+  of Financial Institutions/Enquête trimestrielle sur les institutions
+  financières</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1440</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Quarterly Trucking
+  Survey (QTS)/Enquête trimestrielle sur le camionnage (ETC)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>2150<br>3259<br>1504</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Radio Listening
+  Databank/Banque de données sur l'écoute de la radio</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1441</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Railway Operating
+  Statistics Survey/Enquête sur les statistiques de l'exploitation ferroviaire</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0250</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>RCMP Public
+  Complaints Commission (PCC) Survey/Enquête sur la commission des plaints du
+  public (CPP) contre la GRC</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1127</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Register of
+  Postsecondary and Adult Education Institutions/Registre des établissements
+  postsecondaires et d'éducation des adultes</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1441</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Rental Repair
+  and Renovation Expenditure Survey/Enquête sur les dépenses de réparation et
+  de rénovation de logements en location</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0250</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Research and
+  Development in Canadian Industry Intended to Directly Benefit Developing
+  Countries/Recherche et développement dans l'industrie canadienne à
+  l'intention des pays en voie de développement</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1127</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Residential
+  Care Facilities (RCF)/Établissements de soins pour bénéficiaires internes
+  (ESBI)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1504</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Residential
+  Telephone Service Survey (RTSS)/Enquête sur le service téléphonique
+  résidentiel (ESTR)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1441</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Respondent
+  Selection Study for the General Social Survey/Étude sur la sélection des
+  répondants pour l'Enquête sociale générale</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0250</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Retail Chains
+  and Department Stores/Magasins de détail à succursales et les grands magasins</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3647<br>9348<br>8759<br>1127</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Retail Store
+  Survey (Annual)/Enquête sur les magasins de détail (annuelle)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>1441</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Retail Trade
+  Survey (Annual)/Enquête sur le commerce de détail (annuelle)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1505</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Rigid Insulating
+  Board/Panneaux isolants rigides</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1442</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Sales of Paints,
+  Varnishes and Lacquers/Ventes de peintures, vernis et laqués</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0251</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Satellite Account
+  of Nonprofit Institutions and Volunteering/Compte satellite des organismes
+  sans but lucratif du secteur bénévole</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1128</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>School Leavers
+  Survey/Enquête auprès des sortants</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1442</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>ScotiaMcLeod/ScotiaMcLeod</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0251</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Secondary
+  School Graduates Survey (SSGS)/Enquête sur les diplômés des écoles
+  secondaires (EDES)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1128</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Security Intelligence
+  Review Committee Employee Survey/Sondage auprès des employé(e)s du comité de
+  surveillance des activités de renseignement de sécurité</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>2150<br>3259<br>1505</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Seed Corn
+  Trade Survey/Enquête sur le commerce des semences de maïs</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1442</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Selected Financial
+  Indexes/Certains indices financiers</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0251</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Self-Sufficiency
+  Project (SSP)/Projet de l'autosuffisance (PA)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1128</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Semi-annual
+  Shipments of Office Furniture Products/Livraisons semestrielles des produits
+  de meubles de bureau</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1442</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Shelter Cost
+  Survey/Enquête sur les frais de logement</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1506</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Shipments of
+  Solid Fuel Burning Heating Products/Livraisons des produits de chauffage à
+  combustible solide</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1443</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Steel Primary
+  Forms Weekly/Acier en formes primaires (hebdomadaire)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0252</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Stocks of Frozen
+  Fruit and Vegetables/Stocks de fruits et de légumes congelées</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1129</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Sugar - Situation/Situation
+  - sucre</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1443</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Sun Exposure
+  Survey/Enquête sur l'exposition au soleil</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0252</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of 1995
+  Graduates Who Moved to the United States (SGMUS)/Enquête auprès des diplômés
+  de 1995 qui sont déménagés aux États-Unis (EDDEU)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1129</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Activity
+  with International Financial Institutions (IFI)/Enquête sur l'activité dans
+  le secteur des institutions financières Internationales</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1506</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Advanced
+  Technology/Enquête sur les technologies de pointe</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1443</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Adventure
+  Travel Operations in Canada/Enquête auprès des entreprises de tourisme
+  d'aventure au Canada</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0252</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Alberta
+  Apprentices and Journeymen/Enquête auprès des apprentis et des manoeuvres en
+  Alberta</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1129</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Annual
+  Work Patterns/Enquête sur l'activité annuelle</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1443</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Approaches
+  to Educational Planning (SAEP)/Enquête sur les approches en matière de
+  planification des études (EAPE)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>2150<br>3259<br>1507</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Biotechnology
+  Use in Canadian Industries/Enquête sur l'utilisation de la biotechnologie aux
+  industries canadiennes</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1444</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Business
+  Incubation/Enquête sur l'incubation d'entreprise</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3849<br>0253</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Canada's
+  Tourist Attractions/Enquête sur les attractions touristiques du Canada</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1130</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Canadian
+  Attitudes toward Learning (SCAL)/Enquête sur les attitudes des Canadiens à
+  l'égard de l'apprentissage (EACA)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1444</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Child
+  Care/Enquête sur la garde des enfants</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0253</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Colleges
+  and Institutes (SCI)/Enquête sur les collèges et les instituts (ECI)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1130</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Consumer
+  Finances (SCF)/Enquête sur les finances des consommateurs (EFC)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1507</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Consumer
+  Finances (Small Sample)/Enquête sur les finances des consommateurs (petit
+  échantillon)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1444</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Deposit-accepting
+  Intermediaries: Chartered Banks, Trust Companies, Caisses Populaires and
+  Credit Unions/Enquête auprès des intermédiaires financiers de dépôts :
+  banques à charte, sociétés de fiducie, caisses populaires et coopératives de
+  crédit</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0253</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Displaced
+  Workers/Enquête auprès des travailleurs déplacés</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3647<br>9348<br>8759<br>1130</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Earned
+  Doctorates (SED)/Enquête auprès des titulaires d'un doctorat (ETD)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1444</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Educational
+  Attainment (Alberta)/Enquête sur le niveau d'instruction (Alberta)</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1508</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Electronic
+  Commerce and Technology (SECT)/L'enquête sur le commerce électronique et la
+  technologie (ECET)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1445</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Employment,
+  Payrolls and Man-hours (ES1A)/Enquête sur l'emploi, la rémunération et les
+  heures-hommes (ES1A)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0254</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Family
+  Expenditures (Famex)/Enquête sur les dépenses des familles (Famex)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1131</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Federal
+  Government Expenditures on Culture/Enquête sur les dépenses d'administration
+  fédérale au titre de la culture</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1445</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Financial
+  Statistics of Private Elementary and Secondary Schools (FinPESS)/Enquête sur
+  les statistiques financières des écoles privées primaires et secondaires
+  (EFEPS)</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0254</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Fraud
+  Against Businesses/Enquête sur la fraude contre les entreprises</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1131</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Growing
+  Innovative Firms/Enquête sur les entreprises innovatrices en expension</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>2150<br>3259<br>1508</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Household
+  Energy Use (SHEU)/Enquête sur l'utilisation de l'énergie par les ménages
+  (EUÉM)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>1445</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Improvement
+  and Innovation in Construction Investments/Enquête sur l'amélioration et
+  l'innovation dans le domaine des investissements en construction</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0254</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Industrial
+  Processes (SIP)/Enquête sur les processus industriels (EPI)</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1131</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Innovation/Enquête
+  sur l'innovation</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1445</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Innovation
+  and Business Strategy/Enquête sur l'innovation et les stratégies d'entreprise</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1509</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Innovation,
+  Advanced Technologies and Practices in the Construction and Related
+  Industries/Enquête sur l'innovation, les technologies et pratiques dans les
+  industries de la construction et les industries connexes</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1446</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Intellectual
+  Property Commercialization in the Higher Education Sector/Enquête sur la
+  commercialisation de la propriété intellectuelle dans le secteur de
+  l'enseignement supérieur</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0255</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Job
+  Opportunities/Enquête sur les perspectives d'emploi</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1132</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Knowledge
+  Management Practices/Enquête sur les pratiques de gestion des connaissances</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1446</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Leisure
+  Time Activities and Reading Habits/Activités de loisirs et habitudes de
+  lecture</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0255</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Literacy
+  Skills Used in Daily Activities/Enquête sur les capacités de lecture et
+  d'écriture utilisées quotidiennement</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1132</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Livestock
+  Slaughter/Relevé des abattages de bestiaux</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1509</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Maternity
+  Leave/Enquête sur les congés de maternité</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1446</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Older
+  Workers/Enquête sur les travailleurs âgés</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0255</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Payday
+  Loan Services (PDLSS)/Enquête sur les services de prêts sur salaire</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1132</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of People
+  Living in First Nations Communities/Enquête auprès des peuples vivant dans
+  les collectivités des Premières nations</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1446</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of People
+  Living On Reserves (SPLOR)/Enquête auprès des personnes vivant dans les
+  réserves (EAPVR)</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>2150<br>3259<br>1510</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Persons
+  Not in the Labour Force/Enquête sur les personnes n'étant pas sur le marché
+  du travail</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1447</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Principals
+  (SOP)/Enquête auprès des directeurs d'école (EDE)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0256</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Providers
+  of Training in English or French as a Second Language/Enquête auprès des
+  fournisseurs de formation en anglais ou en français langue seconde au Canada</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1133</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Provincial/Territorial
+  Government Expenditures on Culture/Enquête sur les dépenses des
+  administrations provinciales/territoriales au titre de la culture</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1447</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Self-employment
+  (SSE)/Enquête sur le travail independent (ETI)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0256</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Smoking
+  Habits/Enquête sur l'habitude de fumer</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1133</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of the
+  Construction Industry/Enquête de l'industrie de construction</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1510</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of the
+  Couriers and Local Messengers Industry/Enquête sur l'industrie de messageries
+  et des services locaux de messagers</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1447</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of the
+  Medical Devices Industry/Enquête sur l'industrie des matériels médicaux</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3849<br>0256</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of the
+  Taxi and Limousine Services Industry/Enquête sur l'industrie des services de
+  taxi et de limousine</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3647<br>9348<br>8759<br>1133</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Union
+  Membership/Enquête sur l'adhésion syndicale</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>1447</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Volunteer
+  Activity/Enquête sur le bénévolat</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1511</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Volunteer
+  Workers/Enquête auprès des travailleurs bénévoles</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1448</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Wage
+  Rates for Hired Farm Labour/Enquête sur les taux des salaires de la
+  main-d'oeuvre agricole salariée</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0257</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Work
+  Arrangements/Enquête sur les horaires et les conditions de travail</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1134</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey of Work
+  History/Enquête sur les antécédents de travail</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1448</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on
+  Ageing and Independence/Enquête sur le vieillissement et l'autonomie</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0257</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on
+  Education in the Minority-Language and Second-Language at the Postsecondary
+  Level/Enquête sur l'enseignement dans la langue de la minorité et dans la
+  langue seconde au niveau postsecondaire</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1134</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on
+  Financing of Co-operatives/Enquête sur le financement des coopératives</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>2150<br>3259<br>1511</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on
+  Fluid Power Products Manufactured in Canada/Enquête sur les dispositifs de
+  transmission d'énergie par fluide fabriqués au Canada</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1448</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on
+  Small R&amp;D Performers/Enquête sur les petits exécutants de R-D</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0257</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on
+  Smoking in Canada/Enquête sur le tabagisme au Canada</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1134</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on the
+  Commercialisation of Innovation/Enquête sur la commercialisation de
+  l'innovation</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1448</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on the
+  Importance of Nature to Canadians/Enquête sur l'importance de la faune et les
+  secteurs naturels pour les Canadiens</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1512</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on the
+  Vitality of Official-Language Minorities (SVOLM)/Enquête sur la vitalité des
+  minorités de langue officielle (EVMLO)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1449</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on
+  Transition to Civilian Life/Enquête sur la transition à la vie civile</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0258</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Survey on Work
+  Reduction/Enquête sur la réduction des heures de travail</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1135</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Tea and Coffee/Thé
+  et café</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1449</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Telecommunications
+  Plant Price Index (CTPPI)/Indice des prix des installations de
+  télécommunications (IPICT)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>3849<br>0258</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Telecommunications
+  Services Price Index (TSPI)/Indice de prix de services de télécommunications
+  (IPST)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1135</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Television
+  Viewing Databank/Banque de données sur l'écoute de la télévision</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1512</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>The Human
+  Genetic Material Survey/Enquête sur le matériel génétique humain</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1449</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Therapeutic
+  Abortion Survey/Enquête sur les avortements thérapeutiques</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3849<br>0258</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Tourism Attitude
+  and Motivation Study/Enquête sur les attitudes et les motivations à l'égard
+  du tourisme</td>
+  <td>Social</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>3647<br>9348<br>8759<br>1135</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Tracking Study
+  of Federal Employees/Enquête de suivi d'anciens fonctionnaires fédéraux</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1449</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Trade/Vocational
+  Enrolment Survey (TVOC)/Enquête sur les effectifs des programmes de formation
+  professionnelle au niveau des métiers (EPFP)</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Census Division</td>
+  <td>2150<br>3259<br>1513</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Travel Activities
+  and Motivation Survey (TAMS)/Enquête sur les activités et les préférences en
+  matière de voyages (EAPV)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>1450</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Travel to Work
+  Survey/Enquête sur les déplacements entre le domicile et le lieu du travail</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0259</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Unemployment
+  Insurance Statistics - Annual/Statistiques sur l'assurance-chômage - Annuel</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1136</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>University and
+  College Academic Staff System - Part-time Staff (PT-UCASS)/Système
+  d'information sur le personnel d'enseignement dans les universités et les
+  collèges - Personnel à temps partiel</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1450</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>University and
+  College Academic Staff System (UCASS)/Système d'information sur le personnel
+  d'enseignement dans les universités et les collèges (SPEUC)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3849<br>0259</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>University
+  Student Information System (USIS)/Système d'information statistique sur la
+  clientèle universitaire (SISCU)</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1136</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Vending Machine
+  Operators/Exploitants de distributeurs automatiques</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>2150<br>3259<br>1513</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Victims of
+  Crimes Survey - Edmonton/Enquête sur les actes criminels à Edmonton</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>1450</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Violence Against
+  Women Survey (VAWS)/Enquête sur la violence envers les femmes (EVEF)</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>3849<br>0259</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Vital Statistics
+  - Divorce Database/Statistique de l'état civil - Base de données sur les
+  divorces</td>
+  <td>Agriculture</td>
+  <td>Voluntary</td>
+  <td>Health Division</td>
+  <td>3647<br>9348<br>8759<br>1136</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Vital Statistics
+  - Marriage Database/Statistique de l'état civil - Base de données sur les
+  mariages</td>
+  <td>Business</td>
+  <td>Mandatory</td>
+  <td>Census Division</td>
+  <td>1450</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Wage Survey of
+  Seasonal Workers in the Horticultural Sector/L'enquête sur les salaires des
+  employés saisonniers du secteur horticole</td>
+  <td>Social</td>
+  <td>Mandatory</td>
+  <td>Agriculture Division</td>
+  <td>2150<br>3259<br>1514</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Wholesale
+  Trade Commodity Survey by Origin and Destination/Enquête sur les marchandises
+  vendues en gros selon l'origine et la destination</td>
+  <td>Other</td>
+  <td>Voluntary</td>
+  <td>Industry Division</td>
+  <td>1451</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Workplace and
+  Employee Survey (WES)/Enquête sur le milieu de travail et les employés (EMTE)</td>
+  <td>Agriculture</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0260</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Youth in Transition
+  Survey, 15 year-olds (Mathematics Cohort) (YITS)/Enquête auprès des jeunes en
+  transition - 15 ans (Cohorte mathématique) (EJET)</td>
+  <td>Business</td>
+  <td>Voluntary</td>
+  <td>Agriculture Division</td>
+  <td>3647<br>9348<br>8759<br>1137</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Youth in Transition
+  Survey, 15 year-olds (Reading Cohort) (YITS)/Enquête auprès des jeunes en
+  transition - 15 ans (Cohorte lecture) (EJET)</td>
+  <td></td>
+  <td>Mandatory</td>
+  <td>Industry Division</td>
+  <td>1451</td>
+  
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Youth Shelter
+  Pilot Survey/Enquête pilote sur les centres d'hébergements pour jeunes</td>
+  <td>Other</td>
+  <td>Mandatory</td>
+  <td>Health Division</td>
+  <td>3849<br>0260</td>
+ </tr>
+ <tr>
+            <td><input type="checkbox" value=""></td>
+  <td>Youth Smoking
+  Survey (YSS)/Enquête sur le tabagisme chez les jeunes (ETJ)</td>
+  <td>Agriculture</td>
+  <td></td>
+  <td>Census Division</td>
+  <td>3647<br>9348<br>8759<br>1137</td>
+ </tr>
+    </tbody>
+    
+</table>
+<div class="excel-export">
+	<input id="excel-export-button" type="submit" value="Export" />
+    <span id="excel-export-count"></span>
+</div>
+</form>
+ 
+<script> 
+(function($) {
+   $.fn.dataTableExt.oApi.fnGetColumnData = function ( oSettings, iColumn, bUnique, bFiltered, bIgnoreEmpty, bSort ) {
+     // check that we have a column id
+     if ( typeof iColumn == "undefined" ) return new Array();
+     
+     // by default only include unique data
+     if ( typeof bUnique == "undefined" ) bUnique = true;
+     
+     // by default only look at filtered data
+     if ( typeof bFiltered == "undefined" ) bFiltered = true;
+     
+     // by default empty values are not included
+     if ( typeof bIgnoreEmpty == "undefined" ) bIgnoreEmpty = false;
+     
+     // by default values are sorted
+     if ( typeof bSort == "undefined" ) bSort = true;
+     
+     // list of rows which we're going to loop through
+     var aiRows;
+     
+     // use only filtered rows
+     if (bFiltered === true){   
+       aiRows = oSettings.aiDisplay;
+     }
+     // use all rows
+     else 
+        aiRows = oSettings.aiDisplayMaster; // all row numbers
+     
+	 // set up data array	
+     var asResultData = new Array();
+     
+     for (var i=0,c=aiRows.length; i<c; i++) {
+       iRow = aiRows[i];
+       var aData = this.fnGetData(iRow);
+       var sValue = aData[iColumn];
+       
+       // ignore empty values?
+       if (bIgnoreEmpty === true && sValue.length === 0) continue;
+       
+       // ignore unique values?
+       else if (bUnique === true && jQuery.inArray(sValue, asResultData) > -1) continue;
+       
+       // else push the value onto the result data array
+       else asResultData.push(sValue);
+     }
+     
+     if(bSort)
+       asResultData.sort();
+     
+     return asResultData;
+}}(jQuery));
+ 
+$(document).ready(function(){
+	var oTable = $("#surveyTable").dataTable({
+		"sDom":			'ilt<"bottom"p>',
+		"bSort":		false,
+		"bFilter":		true,
+		"bLengthChange": true,
+		"oLanguage": {
+			"oPaginate": {
+				"sPrevious": "Previous",
+				"sNext": "Next"
+			},
+			"sLengthMenu": "_MENU_ surveys per page",
+			"sZeroRecords": "No matching surveys found",
+			"sInfo": "Showing _START_ to _END_ of _TOTAL_ surveys",
+			"sInfoEmpty": "",
+			"sInfoFiltered": ""
+		}
+	});
+	
+	var oSettings = oTable.fnSettings();
+	
+	/* Add #top anchors to the previous and next links beneath the data table */
+	$("#surveyTable_next").attr("href","#top");
+	$("#surveyTable_previous").attr("href","#top");
+	
+	/* Add for attribute to label tags */
+	$("#survey-name-label").attr("for","input-0");
+	$("#survey-type-label").attr("for","select-0");
+	$("#participation-label").attr("for","select-1");
+	$("#client-division-label").attr("for","input-1");
+	$("#pe-code-label").attr("for","input-2");
+	
+	//Write the filter row when the page loads
+	$("thead tr:last").after(fnWriteFilterRow());
+	
+	//Populate the select lists when the page loads
+	$(fnPopulateSelects);
+	
+	//Disable the export to excel button when the page loads
+	$("#excel-export-button").prop("disabled",true);
+	
+	/* Create the parent checkbox */
+	$(".parent-checkbox").html("<input id='parent-checkbox' type='checkbox' value='' title='Select all surveys'>");
+	
+	/* Bind the click event handler to the checkboxes */
+	$("#surveyTable tbody").on('click', "td>:checkbox" ,function() {
+		fnHighlightSelectedRow($(this));
+		fnDisplayExportCount();
+	});
+	
+	/* Create the input objects */
+  	$('.input-filter').each( function ( i ) {
+		var selector = "input-" + i
+        $(this)
+          .html("<input id='" + selector +"' type='text' value='' />")
+          .find('input')
+          .keyup(function(){
+          	//if data is typed into the PE Code input field (i==2) then filter using regex 
+          	//otherwise use a regular text string filter
+          	if (i==2)
+            	oTable.fnFilter($(this).val(), fnGetColumnIndex(i),true,false);
+            else
+            	oTable.fnFilter($(this).val(), fnGetColumnIndex(i));
+          });
+	});
+	
+	/* Create the select objects */
+	function fnCreateSelect( aData, j)
+	{
+		var title = "--- Show all ---";
+		var iLen = aData.length;
+		var selector = "select-" + j;
+		var r="<select id='" + selector + "'><option value=''>" + title + "</option>";
+		for ( var i=0 ; i<iLen ; i++ )
+		{
+		  r += '<option value="'+aData[i]+'">'+aData[i]+'</option>';
+		}
+		return r+'</select>';
+	}
+	
+	/* 	This function maps the input field filter to the correct column. The collection of input fields are treated as a 0-based array but 
+		the collection of columns begins at 1. Plus we have to skip two columns to account for the select objects.			
+	*/  
+	function fnGetColumnIndex(i)
+	{
+		var col = null;
+		switch(i)
+		{
+			case 0:
+				col = 1;
+				break;
+			case 1:
+				col = 4;
+				break;
+			case 2:
+				col = 5;
+				break;
+		}
+		return col;
+	}
+  
+  	/* Populate the select objects with the data from the column */
+	function fnPopulateSelects()
+	{
+		$(".select-filter").each(function(i){
+		  if ($(this).hasClass('select-filter'))
+		  {
+			var colData = i + 2;
+			$('.select-filter').eq(i)
+			  .html(fnCreateSelect(oTable.fnGetColumnData(colData),i))
+			  .find('select')
+			  .change(function(){
+			      //if the first option in the select list is selected (i.e. Show All)
+			  	  if ($(this).prop("selectedIndex") == 0)
+			  	  {
+			  	  	oTable.fnFilter($(this).val(), colData);
+			  	  }
+			  	  else
+			  	  {
+			  	  	//if the blank item is selected then filter by regex for empty strings
+			  	  	if ($(this).val().length == 0)
+				    {
+						oTable.fnFilter('^$', colData, true, false);
+				  	}
+				 	else
+				  	{
+					  	oTable.fnFilter($(this).val(), colData);
+				  	}
+			  	  }
+			  });
+		  }
+		});
+	}
+	
+	/* When the parent checkbox is selected, loop through all the checkboxes and either check them (when true) or uncheck them (when false) */
+	$("#parent-checkbox").click(function() {
+		oTable.fnSettings().oFeatures.bPaginate = false;
+		var pageNumber = (Math.ceil(oSettings._iDisplayStart/oSettings._iDisplayLength));
+		oTable.fnDraw();
+		
+		if ($(this).prop("checked")) {
+			$("td>:checkbox").each(function() {
+				$(this).prop("checked",false);
+				fnHighlightSelectedRow($(this));
+			});
+			
+			$("td>:checkbox").each(function() {
+				$(this).prop("checked",true);
+				fnHighlightSelectedRow($(this));
+			});
+		}
+		else{
+			$("td>:checkbox").each(function() {
+				$(this).prop("checked",false);
+				fnHighlightSelectedRow($(this));
+			});
+		}
+				
+		oTable.fnSettings().oFeatures.bPaginate = true;
+		oTable.fnDraw();
+		oTable.fnPageChange(pageNumber);
+
+		fnDisplayExportCount();
+	});
+		
+	/* Display the total number of surveys to export beside the Export button */
+	function fnDisplayExportCount() {
+		oTable.fnSettings().oFeatures.bPaginate = false;
+		var pageNumber = (Math.ceil(oSettings._iDisplayStart / oSettings._iDisplayLength));
+		oTable.fnDraw();
+		
+		var count=$("td>:checkbox[checked]").length;
+		
+		oTable.fnSettings().oFeatures.bPaginate = true;
+		oTable.fnDraw();
+		oTable.fnPageChange(pageNumber);
+		
+		var msg1 = "survey selected for export";
+		var msgMany = "surveys selected for export";
+		
+		if (count === 0) {
+			$("#excel-export-count").html("");
+			$("#excel-export-button").prop("disabled", true);
+		} else if (count==1) {
+			$("#excel-export-count").html(count + " " + msg1);
+			$("#excel-export-button").prop("disabled",false);
+		} else {
+			$("#excel-export-count").html(count + " " + msgMany);
+			$("#excel-export-button").prop("disabled", false);
+		}
+	}
+			
+	/* Highlight the row that was checked */
+	function fnHighlightSelectedRow(checkbox)
+	{	
+		if (checkbox.prop("checked"))
+			checkbox.parent("td").addClass("excel-export-highlight").nextAll("td").addClass("excel-export-highlight");
+		else
+			checkbox.parent("td").removeClass("excel-export-highlight").nextAll("td").removeClass("excel-export-highlight");
+		
+	}
+	
+	/* Writes the filter row beneath the header row. This is only written when JavaScript is enabled */
+	function fnWriteFilterRow()
+	{
+		var theRow = null;
+		theRow = "<tr><th class='filter-row-cells'>&nbsp;</th>";
+		theRow += "<th class='input-filter filter-row-cells'></th>";
+		theRow += "<th class='select-filter filter-row-cells'></th>";
+		theRow += "<th class='select-filter filter-row-cells'></th>";
+		theRow += "<th class='input-filter filter-row-cells'></th>";
+		theRow += "<th class='input-filter filter-row-cells'></th></tr>";
+		return theRow;
+	}
+		
+}); //document.ready end
+</script>
+
+<!-- InstanceEndEditable -->
+<dl id="gcwu-date-mod" role="contentinfo">
+<dt>Date modified:</dt><dd>
+  {YYYY-MM-DD}
+</dd>
+</dl> 
+<div class="clear"></div>
+<!-- MainContentEnd -->
+</div></div>
+</div></div>
+
+<div id="wb-foot"><div id="wb-foot-in"><footer><h2 id="wb-nav">Footer</h2>
+<!-- FooterStart -->
+<nav role="navigation"><div id="gcwu-sft"><h3>Site footer</h3><div id="gcwu-sft-in">
+<div id="gcwu-tctr">
+<ul>
+<li class="gcwu-tc"><a href="#" target="_blank" rel="license">Terms and conditions</a></li>
+<li class="gcwu-tr"><a href="#" target="_blank">Transparency</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+<div class="span-2"><div class="gcwu-col-head"><a href="#" target="_blank">About us</a></div></div>
+<div class="span-2"><div class="gcwu-col-head"><a href="#" target="_blank">Contact us</a></div></div>
+</div></div></nav>
+
+<nav role="navigation"><div id="gcwu-gcft"><h3>Government of Canada footer</h3><div id="gcwu-gcft-in"><div id="gcwu-gcft-fip">
+<ul>
+<li><a target="_blank" rel="external" href="http://healthycanadians.gc.ca/index-eng.php"><span>Health</span><br />healthycanadians.gc.ca</a></li>
+<li><a target="_blank" rel="external" href="http://www.voyage.gc.ca/index-eng.asp"><span>Travel</span><br />travel.gc.ca</a></li>
+<li><a target="_blank" rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml"><span>Service Canada</span><br />servicecanada.gc.ca</a></li>
+<li><a target="_blank" rel="external" href="http://www.jobbank.gc.ca/intro-eng.aspx"><span>Jobs</span><br />jobbank.gc.ca</a></li>
+<li><a target="_blank" rel="external" href="http://actionplan.gc.ca/en"><span>Economy</span><br />actionplan.gc.ca</a></li>
+<li id="gcwu-gcft-ca"><div><a target="_blank" rel="external" href="http://www.canada.gc.ca/menu-eng.html">Canada.gc.ca</a></div></li>
+</ul>
+</div></div></div></nav>
+<!-- FooterEnd -->
+</footer>
+</div></div></div>
+
+<!-- ScriptsStart -->
+<script src="../../dist/theme-gcwu-fegc/js/theme-min.js"></script>
+<script src="../../dist/js/settings.js"></script>
+<script src="../../dist/js/pe-ap-min.js"></script>
+<!-- ScriptsEnd -->
+</body>
+<!-- InstanceEnd --></html>

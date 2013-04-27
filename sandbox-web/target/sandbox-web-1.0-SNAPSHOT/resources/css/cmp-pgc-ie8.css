@@ -1,0 +1,20 @@
+@charset "utf-8";
+  
+/** Screen and print CSS **/
+@media screen,print {
+}
+
+/** Screen-only CSS **/
+@media screen {
+
+	div.cn-view-filter input[type="submit"], .cn-paging input[type="submit"] {
+		min-height: 20px; 
+		margin-bottom: 5px;
+	}
+
+
+}
+
+/** Print-only CSS **/
+@media print {
+}

@@ -1,0 +1,51 @@
+<FindBugsFilter>
+	<Match>
+		<Or>
+			<Class name="~ca\.statcan\.census\.fms\.web\..*Action" />
+			<Class name="~ca\.statcan\.census\.fms\.(.*\.)?service\..*Service" />
+		</Or>
+		<Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+	</Match>
+	<Match>
+		<Or>
+			<Bug pattern="EI_EXPOSE_REP2" />
+			<Bug pattern="EI_EXPOSE_REP" />
+		</Or>
+	</Match>
+	<Match>
+		<Bug pattern="SE_NO_SERIALVERSIONID" />
+	</Match>
+	<Match>
+		<Class name="~ca\.statcan\.census\.fms\.(.*\.)?service\..*ServiceStub.*" />
+		<Bug category="PERFORMANCE" />
+	</Match>
+	<Match>
+		<!--
+			Needed to expose Spring Application Context thourgh a static method
+		-->
+		<Class name="ca.statcan.icos.spring.ApplicationContextFactory" />
+		<Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+	</Match>
+	<Match>
+		<!--
+			Class imported from the latest version of Hibernate
+			http://viewvc.jboss.org/cgi-bin/viewvc.cgi/hibernate/core/trunk/core/src/main/java/org/hibernate/transaction/WebSphereExtendedJTATransactionLookup.java?view=log
+			revision 14449
+		-->
+		<Class
+			name="~ca\.statcan\.census\.fms\.hibernate\.WebSphereExtendedJTATransactionLookup.*" />
+	</Match>
+	<Match>
+		<!--
+      Ignoring all the castor files
+    -->
+		<Class name="~ca\.statcan\.census\.fms\.castor\..*" />
+	</Match>
+	<Match>
+		<!--
+			Ignore the redefinition of a superclass with the same simple name, as
+			it is used extensively for breadcrumbs.
+		-->
+		<Bug pattern="NM_SAME_SIMPLE_NAME_AS_SUPERCLASS" />
+	</Match>
+</FindBugsFilter>

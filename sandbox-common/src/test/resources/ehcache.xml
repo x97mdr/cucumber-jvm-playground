@@ -1,0 +1,20 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ehcache.sourceforge.net/ehcache.xsd">
+
+	<diskStore path="java.io.tmpdir" />
+
+	<defaultCache maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="true"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120"
+		memoryStoreEvictionPolicy="LRU" />
+
+	<cache name="ca.statcan.census.fms.model.geo.CollectionArea"
+		maxElementsInMemory="800" eternal="true" overflowToDisk="false" />
+
+	<cache name="ca.statcan.census.fms.model.geo.CollectionAreaActivity"
+		maxElementsInMemory="4000" eternal="true" overflowToDisk="false" />
+
+	<cache name="ca.statcan.census.fms.model.admin.Position"
+		maxElementsInMemory="4000" eternal="true" overflowToDisk="false" />
+
+</ehcache>

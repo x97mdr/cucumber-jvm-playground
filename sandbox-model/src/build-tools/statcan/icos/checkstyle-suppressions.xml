@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+     "-//Puppy Crawl//DTD Suppressions 1.0//EN"
+     "http://www.puppycrawl.com/dtds/suppressions_1_0.dtd">
+
+<suppressions>
+	<suppress checks="MagicNumberCheck"
+		files="ca\\statcan\\census\\fms\\common\\web\\helper\\UserUtils.java"
+		lines="43-51" />
+	<suppress checks="MagicNumberCheck" files="ca\\statcan\\census\\fms\\model\\.*" />
+	<suppress checks="MagicNumberCheck" files="ca\\statcan\\census\\fms\\pay\\[^\.]*\.java" />
+	<suppress checks="JavadocVariableCheck" files="ca\\statcan\\census\\fms\\model\\.*" />
+	<suppress checks="ReturnCountCheck"
+		files="ca\\statcan\\census\\fms\\web\\pay\\EnterPayClaim1Action\.java"
+		lines="182" />
+	<suppress checks="DeclarationOrderCheck"
+		files="ca\\statcan\\census\\fms\\model\\admin\\AddressType\.java"
+		lines="48-56" />
+	<suppress checks="LineLengthCheck"
+		files="ca\\statcan\\census\\fms\\model\\pay\\PayClaim\.java" lines="40-46" />
+	<suppress checks="LineLengthCheck"
+		files="ca\\statcan\\census\\fms\\model\\pay\\PayRecommendationTargets\.java"
+		lines="28-29" />
+	<suppress checks="HideUtilityClassConstructorCheck"
+		files="ca\\statcan\\census\\fms\\batch\\.*Main\.java" />
+	<suppress checks="HideUtilityClassConstructorCheck"
+		files="ca\\statcan\\census\\fms\\batch\\.*\\FmsTo.*Messaging\.java" />
+	<suppress checks="MagicNumberCheck"
+		files="ca\\statcan\\census\\fms\\web\\admin\\MyProfileAction\.java"
+		lines="503-507" />
+</suppressions>

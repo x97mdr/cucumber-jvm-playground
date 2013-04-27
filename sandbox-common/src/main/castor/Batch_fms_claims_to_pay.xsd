@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://statcan.ca/FOP/Pay/batch_fms_claims_to_pay.xsd" targetNamespace="http://statcan.ca/FOP/Pay/batch_fms_claims_to_pay.xsd">
+	<xs:element name="fms_claims">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" name="fms_claim">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="claim_information">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="fms_claim_id" type="xs:int" />
+										<xs:element name="census_staff_nbr" type="xs:int" />
+										<xs:element name="census_staff_sup_nbr" type="xs:int" />
+										<xs:element name="daily_claim_date" type="xs:date">
+											<xs:annotation>
+												<xs:documentation>YYYY-MM-DD</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="submitted_by" type="xs:int" />
+										<xs:element name="submitted_date" type="xs:dateTime">
+											<xs:annotation>
+												<xs:documentation>YYYY-MM-DDTHH:mm:ss</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="recommended_by" type="xs:int" />
+										<xs:element name="recommended_date" type="xs:dateTime">
+											<xs:annotation>
+												<xs:documentation>YYYY-MM-DDTHH:mm:ss</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element maxOccurs="unbounded" name="operation">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="operation_code_id" type="xs:int" />
+										<xs:element minOccurs="0" name="cuid" type="xs:int" />
+										<xs:element minOccurs="0" name="crew_leader_district_nbr" type="xs:int" />
+										<xs:element minOccurs="0" name="number_hours">
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:totalDigits value="12" />
+													<xs:fractionDigits value="6" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" name="e_item3_amount">
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:totalDigits value="12" />
+													<xs:fractionDigits value="6" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" name="e_item2_amount">
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:totalDigits value="12" />
+													<xs:fractionDigits value="6" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" name="e_item1_amount">
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:totalDigits value="12" />
+													<xs:fractionDigits value="6" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" name="allowance_amount">
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:totalDigits value="12" />
+													<xs:fractionDigits value="6" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" name="last_day_worked" type="xs:date">
+											<xs:annotation>
+												<xs:documentation>YYYY-MM-DD</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element minOccurs="0" name="reason_for_assignment_end" type="xs:string" />
+										<xs:element minOccurs="0" name="claimant_comments">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="500" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element minOccurs="0" name="supervisory_comments">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="500" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="fms_claims_verification">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" name="claim_information">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="fms_claim_id" type="xs:int" />
+							<xs:element name="status" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

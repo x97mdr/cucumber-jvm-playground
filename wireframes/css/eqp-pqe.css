@@ -1,0 +1,324 @@
+@charset "utf-8";
+ 
+/** Screen and print CSS **/
+@media screen,print {
+	
+}
+
+
+
+/** Screen-only CSS **/
+@media screen {
+	
+	h1 img {
+		margin: 0px;
+	}
+	
+	.ui-datepicker-trigger {
+		margin-left: 2px!important;
+		margin-right: 2px!important;
+	}
+	
+	h3 {
+		color: #124b79;
+		margin-bottom: 0.5em;
+	}
+	
+	ul.list-positions-available li{
+		list-style: none;
+	}
+
+	legend {
+		color: #000000;
+		margin-left:0px;
+	}
+	
+	/* Validation */
+	
+	.cn-error-msg, .cn-confirmation-msg {
+		margin: 0px;
+		padding: 0px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #cc9999;
+		/* overflow: hidden;
+		float: left;
+		width: 99.9%; */
+		margin-left: 10px;
+		margin-right: 10px;
+		
+	}
+	.cn-error-msg h2, .cn-confirmation-msg h2 {
+		margin: 0px;
+		padding: 0px;
+		background-color: #FAF3F3;
+		background-image: url(../images/icon_attention.png);
+		background-repeat: no-repeat;
+		background-position: 0.8em 0.3em;
+		color: #000000;
+		padding-bottom: 8px;
+		padding-top: 5px;
+		border-left: none;
+		border-top: none;
+		border-right: none;
+		border-bottom: 1px dotted #cc9999;
+		font-size: 110%;
+		padding-left: 3.5em;				
+	}
+	
+	.cn-confirmation-msg {
+		border: 1px solid #99cc99;
+	}
+	
+	.cn-confirmation-msg h2 {
+		background-color: #e5f0db; /* #e5eed0; */
+		background-image: url(../images/icon_confirmation.png);
+	}
+	
+	.cn-error-msg ul, .cn-error-msg ol, .cn-confirmation-msg ol {
+		padding: 0px;
+		margin: 0px;
+		padding-top: 10px;
+		padding-left: 3.9em;
+		padding-right: 10px;
+		list-style-image: url(../images/bullet-arrow.png);	
+	}
+	
+	.cn-confirmation-msg ol {
+		list-style-image: url(../images/bullet-arrow-confirm.png);
+	}
+	
+	li.highlight {
+		background-color: #FFFFCC;
+	}
+	
+	.cn-error-msg ul li, .cn-error-msg ol li, .cn-confirmation-msg ol li{
+		color: #000000;
+	}
+	.cn-error-msg ul li a:link, .cn-error-msg ul li a:visited, .cn-error-msg ul li a:active,
+	.cn-error-msg ol li a:link, .cn-error-msg ol li a:visited, .cn-error-msg ol li a:active,
+	.cn-confirmation-msg ol li a:link, .cn-confirmation-msg ol li a:visited, .cn-confirmation-msg ol li a:active {
+		color: #000000;
+		text-decoration: none;
+	}
+	
+	.cn-error-msg ul li a:focus, .cn-error-msg ul li a:hover,
+	.cn-error-msg ol li a:focus, .cn-error-msg ol li a:hover,
+	.cn-confirmation-msg ol li a:focus, .cn-confirmation-msg ol li a:hover  {
+		text-decoration: underline;
+	}
+	
+	
+	.cn-error-msg h3, .cn-confirmation-msg h3 {
+		vertical-align: bottom;
+	}
+	
+		input.fieldError, select.fieldError {
+		background-color: #FAF3F3; 
+		border-radius:2px;
+		-moz-border-radius:2px;
+		-webkit-border-radius:2px;
+		box-shadow:0 0 1px #aa0000;
+		-moz-box-shadow:0 0 1px #aa0000;
+		-webkit-box-shadow:0 0 1px #aa0000;
+	} 
+	
+	span.fieldError {
+		color: #aa0000;
+		background-color: transparent;
+		border: none;
+		font-weight: 800;
+		display: block;
+	}
+	
+	/* Buttons */
+	
+	#cn-btn input, #login input[type="submit"] {
+		background-color: #b3cef5;
+		background-image: url(../images/button_gradientBlue.jpg);
+		background-repeat: repeat-x;
+		background-position: top;
+		border: 1px solid #95bcf3;
+		color: #333333;
+		cursor: pointer;
+		font-size: 0.9em;
+		font-weight: bold;
+
+		padding-bottom: 5px;
+		padding-left: 8px;
+		padding-right: 8px;
+		margin-top: 4px;
+		padding-top: 5px;
+		text-align: center;
+		vertical-align: middle;
+		border-radius:2px;
+		-moz-border-radius:2px;
+		-webkit-border-radius:2px;
+		text-shadow: 0 1px 0 #eee;
+	}
+	
+	#cn-btn input:hover, #login input[type="submit"]:hover {
+		background-image: url(../images/button_gradientBlue_on.jpg);
+		background-position: top;
+		background-color: #d6e8f4;
+	}
+	
+	form.application {
+		border-top: 3px solid #eeeeee;
+		border-left: 1px dotted #eeeeee;
+		border-right: 1px dotted #eeeeee;
+	}
+	
+	div#application {
+		margin-left: 15px;
+		margin-right: 5px;
+		line-height: 1.8em;
+	}
+	
+	div#application input, div#application label {
+		display: block;
+		padding-top: 5px;
+		padding-left: 3px;
+		
+	}
+	
+	
+	div#application fieldset {
+		
+		margin: 0px;
+		padding: 0px;
+		padding-top: 10px;
+		border: none;
+	}
+	
+	div#application fieldset legend span {
+		font-weight: normal;		
+		/* color: #000000; */
+		background-color: #ffffff;
+	}
+	
+	.form-subgroup {
+		/* margin-left: 1.6em!important;	 */
+		border-bottom: 2px solid #E6F1F7;
+	}
+	
+	.form-subgroup fieldset legend span {
+		font-weight: normal!important;
+		
+	}
+	
+	.form-instructions {
+		color: #555555;
+		font-size: 115%;
+		font-weight: normal;
+	}
+	
+	div.frm-wzrd  {
+		padding-left: 17px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-top: 0px;
+		padding-bottom: 6px;
+		padding-right: 2px;
+		vertical-align: middle;
+		background-image: url(../images/background-buttonContainer.jpg);
+		background-repeat:repeat-x;
+		overflow: auto;
+		border-top: 1px solid #CCCCCC;
+	}
+	
+	span.action-secondary {
+		padding-left: 20px;
+		display: inline;		
+	}
+	
+	div#application input[type="submit"] {
+		display: inline-block;
+	}
+	
+	div#application fieldset.input-group input, div#application fieldset.input-group  label {
+		display: inline-block!important;
+	}
+	
+	div.display-inline input, div.display-inline label {
+		display: inline!important;
+	}
+	
+	/* Utility classes */
+	
+	.mandatory {
+		color: #aa0000;
+		font-weight: 800;
+		padding-right: 3px;
+	}
+
+	.example {
+		display: block;
+		font-size: 80%;
+		color: #505050;
+		padding-left: 1px;
+	}
+	
+	div.line-delimiter {
+		padding: 2px;
+		border-bottom: 1px dotted #eeeeee;
+	}
+	
+	.ui-slider {
+		width: 93%!important;
+		margin-left: 30px;
+		text-align: center;
+		margin-bottom: 5em;
+	}
+	
+	label.label-slider {
+		font-size: 110%;
+	}
+
+	h2 {
+		border-left: 2px solid #AEC4D2;
+		padding-left: 3px;
+		color: #333333;
+		margin-bottom: 0.3em;
+	}
+
+	div.fld-related {
+		position: relative;
+		padding: 0 0 0 23px;
+	}
+	
+	div#declaration {
+		line-height: 1.8em;
+		padding-left: 10px;
+		padding-right: 10px;
+
+		background-color: #E7F0F5;
+		background-image: url(../images/background-declaration.png);
+		background-position: bottom right;
+		background-repeat: no-repeat;
+		border: 1px dotted #cccccc;
+		-moz-box-shadow: 3px 3px 5px #888;
+		-webkit-box-shadow: 3px 3px 5px #888;
+		box-shadow: 3px 3px 5px #888;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (min-width:800px) {
+	.cn-error-msg h2, .cn-confirmation-msg h2 {
+		background-position: 1em 0.25em;
+	}
+}
+
+@media only screen and (min-width:1200px) {
+	.cn-error-msg h2, .cn-confirmation-msg h2 {
+		background-position: 1em 0.3em;
+	}
+}
+
+
+/** Print-only CSS **/
+@media print {
+
+}

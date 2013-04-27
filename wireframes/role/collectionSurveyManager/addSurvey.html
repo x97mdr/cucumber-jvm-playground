@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js"><!-- InstanceBegin template="/Templates/CMP - 1 Column.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--<![endif]--><head>
+<meta charset="utf-8" />
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions -->
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Add a survey - Collection Management Portal</title>
+            <!-- InstanceEndEditable -->
+
+<link rel="shortcut icon" href="../../dist/theme-gcwu-fegc/images/favicon.ico" />
+<meta name="description" content="English description / Description en anglais" />
+<meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
+<meta name="dcterms.title" content="English title / Titre en anglais" />
+<meta name="dcterms.issued" title="W3CDTF" content="Date published (YYYY-MM-DD) / Date de publication (AAAA-MM-JJ)" />
+<meta name="dcterms.modified" title="W3CDTF" content="Date modified (YYYY-MM-DD) / Date de modification (AAAA-MM-JJ)" />
+<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
+<meta name="dcterms.language" title="ISO639-2" content="eng" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+<script src="../../dist/js/jquery.min.js"></script>
+<script src="../../dist/js/jquery-ui.min.js"></script>
+<script src="../../dist/js/dependencies/statcan/jquery.maskedinput.custom.js"></script>
+<!-- InstanceBeginEditable name="Head-JS" -->
+<script src="../../dist/js/dependencies/chosen/chosen.jquery.min.js"></script>
+<!--[if IE]>
+<script src="../../dist/js/dependencies/tipsy/jquery.tipsy.js"></script>
+<![endif]-->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="IEPaths" -->
+<!--[if lte IE 8]>
+<script src="../../dist/js/polyfills/html5shiv-min.js"></script> 
+<link rel="stylesheet" href="../../dist/grids/css/util-ie-min.css" /> 
+<link rel="stylesheet" href="../../dist/js/css/pe-ap-ie-min.css" /> 
+<link rel="stylesheet" href="../../dist/theme-gcwu-fegc/css/theme-ie-min.css" />
+<![endif]-->
+<!-- InstanceEndEditable -->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="../../dist/grids/css/util-min.css" />
+<link rel="stylesheet" href="../../dist/js/css/pe-ap-min.css" />
+<link rel="stylesheet" href="../../dist/theme-gcwu-fegc/css/theme-min.css" />
+<!--<![endif]-->
+<noscript><link rel="stylesheet" href="../../dist/theme-gcwu-fegc/css/theme-ns-min.css" /></noscript>
+<!-- CustomScriptsCSSStart -->
+<link href="../../css/themes/statcan/jquery-ui.css" rel="stylesheet" />
+<link href="../../css/cmp-pgc.css" rel="stylesheet" />
+<!-- InstanceBeginEditable name="Head-CSS" -->
+<link rel="stylesheet" href="../../dist/js/dependencies/chosen/chosen.css" />
+<!--[if IE]>
+<link rel="stylesheet" href="../../dist/js/dependencies/tipsy/tipsy.css" />
+<link rel="stylesheet" href="../../dist/js/dependencies/tipsy/tipsy-docs.css" />
+<!--<![endif]-->
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="IsFieldStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsSeniorFieldStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsRecruitmentStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsCollectionSurveyManager" type="boolean" value="true" -->
+<!-- InstanceParam name="IsTelephoneOperator" type="boolean" value="false" -->
+<!-- InstanceParam name="IsSeniorTelephoneOperator" type="boolean" value="false" -->
+<!-- InstanceParam name="IsOfficeStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsPayStaff" type="boolean" value="false" -->
+<!-- InstanceParam name="IsSupervisor" type="boolean" value="false" -->
+<!-- InstanceParam name="IsSiteManager" type="boolean" value="false" -->
+<!-- InstanceParam name="IsExecutive" type="boolean" value="false" -->
+<!-- CustomScriptsCSSEnd -->
+</head>
+
+<body>
+
+<div id="wb-body">
+<div id="wb-skip">
+<ul id="wb-tphp">
+<li id="wb-skip1"><a href="#wb-cont">Skip to main content</a></li>
+<li id="wb-skip2"><a href="#wb-nav">Skip to footer</a></li>
+</ul>
+</div>
+
+<div id="wb-head"><div id="wb-head-in"><header>
+<!-- HeaderStart -->
+<nav role="navigation"><div id="gcwu-gcnb"><h2><span>Site</span> menu</h2><div id="gcwu-gcnb-in"><div id="gcwu-gcnb-fip">
+<div id="gcwu-sig"><div id="gcwu-sig-in"><div id="gcwu-sig-eng" title="Government of Canada"><img src="../../dist/theme-gcwu-fegc/images/sig-eng.gif" width="214" height="20" alt="Government of Canada" /></div></div></div>
+<ul>
+<li id="gcwu-gcnb1"><a  target="_blank" rel="external" href="http://www.canada.gc.ca/menu-eng.html">Canada.gc.ca</a></li>
+<li id="gcwu-gcnb2"><a  target="_blank" rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml">Services</a></li>
+<li id="gcwu-gcnb3"><a  target="_blank" rel="external" href="http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-eng.html">Departments</a></li>
+<li id="gcwu-gcnb-lang"><a href="#" lang="fr">Français</a></li>
+</ul>
+</div></div></div></nav>
+
+<div id="gcwu-bnr" role="banner"><div id="gcwu-bnr-in">
+<div id="gcwu-wmms"><div id="gcwu-wmms-in"><div id="gcwu-wmms-fip" title="Symbol of the Government of Canada"><img src="../../dist/theme-gcwu-fegc/images/wmms.gif" width="126" height="30"  alt="Symbol of the Government of Canada" /></div></div></div>
+<div id="gcwu-title"><p id="gcwu-title-in"><a target="_blank" href="#">Collection Management Portal</a></p></div>
+
+<section role="search"><div id="gcwu-srchbx"><h2>Search</h2>
+<form action="#" method="post"><div id="gcwu-srchbx-in">
+<label for="gcwu-srch">Search website</label><input id="gcwu-srch" name="gcwu-srch" type="search" value="" size="27" maxlength="150" />
+<input id="gcwu-srch-submit" name="gcwu-srch-submit" type="submit" value="Search" data-icon="search" />
+</div></form>
+</div></section>
+</div></div>
+
+<nav role="navigation">
+<div id="gcwu-psnb"><h2><span>Site</span> menu</h2><div id="gcwu-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
+<ul class="mb-menu" data-ajax-replace="../menu/all.html">
+<li><section><h3><a href="../all/myInbox.html">Inbox</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+    <li><a href="#">Send a message</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+
+<li><section><h3><a href="surveys.html">Surveys</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+    <li><a href="addSurvey.html">Add a survey</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+ 
+
+ 
+
+<li><section><h3><a href="#">Human resources</a></h3>
+<div class="mb-sm">
+
+
+<div class="span-2">
+	<h4><a href="#">Administrative</a></h4>
+	<ul>
+        <li><a href="../fieldStaff/myProfile.html">View/edit my profile</a></li>	
+        <li><a href="../all/viewOrgChart.html">View the organizational chart</a></li>
+        
+        
+   		
+        
+        <li><a href="../fieldStaff/staffSearch/staffSearch-basic.html">Search for staff</a></li>
+        
+		 
+		
+		
+        
+        		
+		
+		
+	</ul>
+</div>
+
+</div>
+</section>
+</li>
+
+
+<li><section><h3><a href="#">Shipping</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+    <li><a href="#">Create a shipment</a></li>
+    <li><a href="#">Recently sent shipments</a></li>   
+    <li><a href="#">Search shipments</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+
+<li><section><h3><a href="#">Tools</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+	<li><a href="#">Reports</a></li>
+    <li><a href="#">Update my system preferences</a></li>
+    <li><a href="#">Change my password</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+
+<li><section><h3><a href="#">Help</a></h3>
+<div class="mb-sm">
+<div class="span-2">
+<ul>
+	<li><a href="#">Reference library</a></li>
+    <li><a href="#">Contact us</a></li>
+</ul>
+</div></div>
+</section>
+</li>
+</ul>
+</div></div></div></div>
+
+<div id="gcwu-bc"><h2>Breadcrumb trail</h2><div id="gcwu-bc-in">
+<ol>
+<li><a href="#">Home</a></li>
+<!-- InstanceBeginEditable name="Breadcrumb" -->
+<li><a href="#">Surveys</a></li>
+<li>Add a survey</li>
+<!-- InstanceEndEditable -->
+</ol>
+<div id="app-logout">
+	<h2>Access to account profile and logout</h2>
+    <ul>
+    	<li class="pipe">
+        
+        
+        
+        	<a class="link-profile-f" href="#">Sylvie Lauzon</a>  
+		
+        
+        
+        
+          
+          
+             	
+        
+        
+        </li>
+    	<li><a class="link-logout" href="#">Logout</a></li>	 
+    </ul>
+</div>
+</div>
+</div>
+</nav>
+<!-- HeaderEnd -->
+</header></div></div>
+
+<div id="wb-core"><div id="wb-core-in" class="equalize">
+<div id="wb-main" role="main">
+  <div id="wb-main-in">
+<!-- MainContentStart -->
+<!-- InstanceBeginEditable name="Content" -->
+<h1 id="cn-cont" class="hd-add-survey">Add a survey</h1> 
+<p>All fields marked with an asterisk (<span class="mandatory">*</span>) are mandatory.</p>
+<form action="#" method="post" name="frmAddSurvey"> 
+    <div class="frm-container">
+        <span class="ui-input-text"><span class="mandatory">*</span>Name:</span>
+        <span class="example">The name of the survey as it will appear throughout the Collection Management Portal.</span>
+        <div>
+        	<label class="invisible-label" for="surveyNameEng">English survey name</label> 
+        	<input id="surveyNameEng" title="English survey name" name="txtSurveyNameEng" type="text" lang="en" placeholder="English survey name" size="75"/>
+            <span id="survey-name-english-error"></span>
+        </div>
+        <div>
+        	<label class="invisible-label" for="surveyNameFra">French survey name</label> 
+        	<input id="surveyNameFra" title="French survey name" name="txtSurveyNameFra" type="text" lang="fr" placeholder="French survey name" size="75"/>
+            <span id="survey-name-french-error"></span>
+        </div>
+    </div>
+     
+    <div class="frm-container">   
+        <span class="ui-input-text"><span class="mandatory">*</span>Acronym:</span>
+        <span class="example">An easier way to refer to the survey. This short form must be unique among all surveys within the Collection Management Portal.</span>
+        <div>
+            <label class="invisible-label" for="acronymEng">English acronym</label> 
+            <input id="acronymEng" title="English acronym" name="txtAcronymEng" type="text" size="10" />
+            <span id="acronyn-english-error"></span>
+        </div>
+        <div>
+            <label class="invisible-label" for="acronymFra">French acronym</label> 
+            <input id="acronymFra" title="French acronym" name="txtAcronymFra" type="text" size="10" />
+            <span id="acronyn-french-error"></span>
+        </div>
+    </div>
+    
+    <div class="frm-container">   
+        <div><label for="surveyType">Type of survey:</label></div>
+        <select id="surveyType" name="lstSurveyType">
+            <option value="0" selected>&#8249;&#8249;&#8249; Select &#8250;&#8250;&#8250;</option>
+            <option value="business">Business</option>
+            <option value="social">Social</option>
+            <option value="agri">Agriculture</option>
+            <option value="other">Other</option>
+        </select>
+        <div class="fld-input-group-inline indent-small">
+            <input id="participation" name="chkParticipation" type="checkbox" value="1" data-mini="true">
+            <label id="participation-text" for="participation" class="fld-input-checkbox-lbl font-small" style="vertical-align: bottom">Participation is <strong>mandatory</strong> for survey respondents.</label>
+        </div>
+    </div>
+    
+    <div class="frm-container">   
+        <div><label for="clientDivision">Client division:</label><span class="example">The full name of the division at Statistics Canada.</span></div>
+        <select id="clientDivision" data-placeholder="&#8249;&#8249;&#8249; Select &#8250;&#8250;&#8250;" name="lstClientDivision" style="width:550px;">
+            <option value="0"></option>
+            <option value="">CoSD: Collection Systems Division</option>
+            <option value="">CSMS: Census Subject Matter Secretariat</option>
+            <option value="">FOP: Field Operations Project</option>
+            <option value="">HRDD: Human Resources Development Division</option>
+            <option value="">HROD: Human Resources Operations Division</option>
+        </select>   
+    </div>
+    
+    <div id="cn-btn">
+        <div class="ui-grid-a">
+            <span class="ui-block-a"><input id="addSurvey" type="submit" name="btnAddSurvey" value="Add survey" data-theme="b" class="button button-accent"></span>
+            <span class="ui-block-b">&nbsp;|&nbsp;<span class="action-secondary"><a href="#" data-role="button" data-icon="delete">Cancel</a></span></span>
+        </div>
+    </div>
+</form>		
+<script language="javascript">
+<!--
+$(document).ready(function(){
+	/*****************************************************************
+	GLOBAL VARIABLES
+	*****************************************************************/
+	var strSurveyNameEng = null;
+	var strSurveyNameFra = null;
+	var aBlacklist = new Array("a","an","and","for","of","on","the","à","au","aux","de","des","du","et","la","le","les","pour","sur");
+	
+	/*****************************************************************
+	PROPERTIES
+	*****************************************************************/
+	
+	/* Provides an input mask to only accept 4 numeric characters for the project code */
+	$("#projectCode,#projectCode2,#projectCode3,#projectCode4").mask("9999");
+	
+	/* Hides the other project code input fields */
+	$("#project-code-hidden-2,#project-code-hidden-3,#project-code-hidden-4").hide();
+			
+	/* Display tooltips */
+	if ($.browser.msie){
+		$("#surveyNameEng,#surveyNameFra").tipsy({
+			trigger:	"focus",
+			gravity:	"w"
+		});
+		
+		$("#acronymEng,#acronymFra").tipsy({
+			trigger:	"focus",
+			gravity:	"w"
+		});
+	}
+	
+	/* Dynamically write the plus icon beside the approriate PE code input fields when the page loads. This code takes into account that some input fields
+	may contain content so it only display the PE code beside the last input field that contains content rather than all the input fields. */
+	if ($("#projectCode2").val()==null || $("#projectCode2").val()==""){
+		$("#add-project-code").html("<img src='../../images/icon_add_16x16.png' width='11' height='10' class='align-bottom'>");
+		$("#add-project-code>img").attr({
+			alt: 	"Add another PE Code",
+			title:	"Add another PE Code"
+		});
+	}
+	else if (($("#projectCode2").val() == null || $("#projectCode2").val() == "") && ($("#projectCode").val() != null || $("#projectCode").val() != "")){
+		$("#add-project-code").html("<img src='../../images/icon_add_16x16.png' width='11' height='10' class='align-bottom'>");
+		$("#add-project-code>img").attr({
+			alt: 	"Add another PE Code",
+			title:	"Add another PE Code"
+		});
+	} 
+	else if (($("#projectCode3").val() == null || $("#projectCode3").val() == "") && ($("#projectCode2").val() != null || $("#projectCode2").val() != "")){
+		$("#add-project-code-2").html("<img src='../../images/icon_add_16x16.png' width='11' height='10' class='align-bottom'>");
+		$("#add-project-code-2>img").attr({
+			alt: 	"Add another PE Code",
+			title:	"Add another PE Code"
+		});
+	}
+	else if (($("#projectCode4").val() == null || $("#projectCode4").val() == "") && ($("#projectCode3").val() != null || $("#projectCode3").val() != "")){
+		$("#add-project-code-3").html("<img src='../../images/icon_add_16x16.png' width='11' height='10' class='align-bottom'>");
+		$("#add-project-code-3>img").attr({
+			alt: 	"Add another PE Code",
+			title:	"Add another PE Code"
+		});	
+	}
+	
+	/*****************************************************************
+	EVENTS
+	*****************************************************************/
+	
+	/* This parses the survey title to create the acronym */
+	$("#surveyNameEng,#surveyNameFra").keyup(function(e) {
+		if ($(this).val() != "")
+		{
+			if ($(this).val().search(" ") > 0 )
+			{
+				var aSurveyWords = $(this).val().split(" ");
+				var len = aSurveyWords.length;
+
+				for (var i=len-1; i>=0; i--)
+				{
+					//remove special characters from the word
+					aSurveyWords[i] = aSurveyWords[i].replace(/[^\w\s]/g,"");
+					
+					var found  = $.inArray($.trim(aSurveyWords[i].toLowerCase()),aBlacklist)
+					if (found > 0)
+					{
+						aSurveyWords.splice(i,1);
+					}
+				}
+								
+				var strAcronym = "";
+				
+				for (i in aSurveyWords){
+					strAcronym = strAcronym + aSurveyWords[i].charAt(0).toUpperCase(); 
+				}
+				
+				if ($(this).attr("lang") == "en")
+					$("#acronymEng").val(strAcronym);
+				else
+					$("#acronymFra").val(strAcronym);
+			}
+			else
+			{
+				if ($(this).val().length > 1)
+				{
+					if ($(this).attr("lang") == "en")
+					{
+						$("#acronymEng").val($(this).val().substr(0,1).toUpperCase().substr(0,4));
+						$("#acronymEng").val($("#acronymEng").val() + $(this).val().toUpperCase().substr(1,3));	
+					}	
+					else
+					{
+						$("#acronymFra").val($(this).val().substr(0,1).toUpperCase().substr(0,4));
+						$("#acronymFra").val($("#acronymFra").val() + $(this).val().toUpperCase().substr(1,3));
+					}
+				}
+			}
+		}
+		else
+		{
+			if ($(this).attr("lang") == "en")
+			{
+				$("#acronymEng").val(" ");
+				$("#acronyn-english-error")
+					.html("")
+					.removeClass("icon-error-16x16");
+			}
+			else
+			{
+				$("#acronymFra").val(" ");
+				$("#acronyn-french-error")
+					.html("")
+					.removeClass("icon-error-16x16");
+			}
+		}
+    });
+	
+	
+	/* Search for previously used acronyms */
+	$("#surveyNameEng,#surveyNameFra").blur(function() {
+		if (($(this).val()!=""))
+		{
+			if ($(this).attr("lang") == "en")
+			{
+				if (strSurveyNameEng != $.trim($(this).val()))
+				{	
+					searchPreviousSurveyNames($.trim($(this).val()),"e");
+					searchPreviousAcronyms($("#acronymEng").val(),"e");
+					strSurveyNameEng = $.trim($(this).val());
+				}
+				
+			}
+			else
+			{
+				if (strSurveyNameFra != $.trim($(this).val()))
+				{						
+					searchPreviousSurveyNames($.trim($(this).val()),"f");
+					searchPreviousAcronyms($("#acronymFra").val(),"f");	
+					strSurveyNameFra = $.trim($(this).val());
+				}
+			}
+		}
+	});
+	
+	/* Removes the warning message when the input field receives the focus */
+	$("#surveyNameEng").focus(function(){
+		$("#survey-name-english-error")
+			.html("")
+			.removeClass("icon-error-16x16");
+	});
+	
+	$("#surveyNameFra").focus(function(){
+		$("#survey-name-french-error")
+			.html("")
+			.removeClass("icon-error-16x16");
+	});
+	
+	$("#acronymEng").focus(function(){
+		$("#acronyn-english-error")
+			.html("")
+			.removeClass("icon-error-16x16");
+	});
+	
+	$("#acronymFra").focus(function(){
+		$("#acronyn-french-error")
+			.html("")
+			.removeClass("icon-error-16x16");
+	});
+	
+	/* This grabs the acronym that was entered to see if it has already been used */
+	$("#acronymEng,#acronymFra").blur(function(){
+		if (($(this).val()!=""))
+		{
+			if ($(this).attr("id") == "acronymEng")
+				searchPreviousAcronyms($(this).val(),"e")
+			else
+				searchPreviousAcronyms($(this).val(),"f")
+		}
+	});
+	
+	/* This function will toggle the checkbox based on what was selected in the select list */
+	$("#surveyType").change(function(){
+		if($("#surveyType").val() == "business")
+		{
+			$("#participation").attr({
+				checked:	true,
+				title:		"Participation is mandatory for business surveys"
+				});
+			$("#participation").tipsy({
+					trigger:	"manual",
+					gravity:	"w",
+					opacity:	1
+				});
+			$("#participation").tipsy("show");
+			setTimeout(function(){$("#participation").tipsy("hide");},5000)
+		}
+		else
+		{
+			$("#participation").attr("checked",false);
+		}
+	});
+	
+	$("#clientDivision").chosen({
+		allow_single_deselect:	"true",
+		search_contains: "true",
+		no_results_text: "No matching client divisions"
+	});
+	
+	/* This function will display second project code input field */
+	$("#add-project-code").click(function(){
+		if (($("#projectCode").val() != "") && ($("#projectCode").val().search("_") < 0))
+		{
+			$("#project-code-hidden-2").show();
+			$("#projectCode2").focus();
+			$("#add-project-code").hide();
+			
+			//Write the add icon beside the input field 
+			$("#add-project-code-2").html("<img src='../../images/icon_add_16x16.png' width='11' height='10' class='align-bottom'>");
+			$("#add-project-code-2>img").attr({
+				alt: 	"Add another PE code",
+				title:	"Add another PE code"
+			});
+		}
+	});
+									
+	/* This function will display third project code input field */
+	$("#add-project-code-2").click(function(){
+		if (($("#projectCode2").val() != "") && ($("#projectCode2").val().search("_") < 0))
+		{
+			$("#project-code-hidden-3").show();
+			$("#projectCode3").focus();	
+			$("#add-project-code-2").hide();
+			
+			//Write the add icon beside the input field 
+			$("#add-project-code-3").html("<img src='../../images/icon_add_16x16.png' width='11' height='10' class='align-bottom'>");
+			$("#add-project-code-3>img").attr({
+				alt: 	"Add another PE code",
+				title:	"Add another PE code"
+			});
+		}
+	});
+	
+	/* This function will display third project code input field */
+	$("#add-project-code-3").click(function(){
+		if (($("#projectCode3").val() != "") && ($("#projectCode3").val().search("_") < 0))
+		{
+			$("#project-code-hidden-4").show();
+			$("#projectCode4").focus();	
+			$("#add-project-code-3").hide();
+		}
+	});
+	
+	
+	/*****************************************************************
+	CUSTOM FUNCTIONS
+	*****************************************************************/
+	
+	/* This function calls a file that searches previously used acronyms to look for conflicts */
+	function searchPreviousAcronyms(strAcronym,strLang)
+	{
+		/*$.get(
+			"filename",
+			"acronynm="+strAcronym,
+			function(responseText,status,xhr){
+					if (status.readyState === 4) {
+						if (status.status === 200) {
+							//if some responseText was successfully returned it means a duplicate acronym was found
+							//so the system must suggest an alternative acronym
+							if (responseText.length != 0)
+							{
+								displayAcronymSuggestion(strLang)
+							}
+						}
+					} 
+				},
+			"text"
+		)*/;
+		displayAcronymSuggestion(strLang)
+	}
+	
+	function displayAcronymSuggestion(strLang)
+	{
+		var strMsg = "That acronym is already in use. Available acronyms: ";
+		var aAcronymSuggestions = new Array(3);
+		var strSelector = null;
+		
+		if (strLang == "e")
+			strSelector = "#surveyNameEng"
+		else
+			strSelector = "#surveyNameFra"
+				
+		if ($(strSelector).val().search(" ") > 0 )
+		{
+			var aSurveyWords = $(strSelector).val().split(" ");
+			
+			//Generate the first acronym suggestion
+			aAcronymSuggestions[0] = $(strSelector).val().substr(0,1).toUpperCase();
+			aAcronymSuggestions[0] = aAcronymSuggestions[0] + $(strSelector).val().substr(1,1);
+
+			for (i=1;i<aSurveyWords.length;i++){
+				aAcronymSuggestions[0] = aAcronymSuggestions[0] + aSurveyWords[i].charAt(0).toUpperCase();
+			}
+			
+			//Generate the second acronym suggestion
+			aAcronymSuggestions[1] = $(strSelector).val().substr(0,1).toUpperCase();
+			aAcronymSuggestions[1] = aAcronymSuggestions[1] + $(strSelector).val().substr(1,2);
+
+			for (i=1;i<aSurveyWords.length;i++){
+				aAcronymSuggestions[1] = aAcronymSuggestions[1] + aSurveyWords[i].charAt(0).toUpperCase();
+			}
+			
+			//Generate the third acronym suggestion
+			aAcronymSuggestions[2] = $(strSelector).val().substr(0,1).toUpperCase();
+						
+			if (aSurveyWords[0].length < 4)
+			{
+				aAcronymSuggestions[2] = aAcronymSuggestions[2] + $(strSelector).val().substr(1,2);
+				aAcronymSuggestions[2] = aAcronymSuggestions[2] + aSurveyWords[1].substr(0,1).toUpperCase();
+				aAcronymSuggestions[2] = aAcronymSuggestions[2] + aSurveyWords[1].substr(1,1);
+				for (i=2;i<aSurveyWords.length;i++){
+					aAcronymSuggestions[2] = aAcronymSuggestions[2] + aSurveyWords[i].charAt(0).toUpperCase();
+				}
+			}
+			else
+			{
+				aAcronymSuggestions[2] = aAcronymSuggestions[2] + $(strSelector).val().substr(1,3);
+				for (i=1;i<aSurveyWords.length;i++){
+					aAcronymSuggestions[2] = aAcronymSuggestions[2] + aSurveyWords[i].charAt(0).toUpperCase();
+				}
+			}
+			
+			for(i in aAcronymSuggestions)
+			{
+				strMsg = strMsg + "<a href='javascript:void(0);'>" + aAcronymSuggestions[i] + "</a>";
+				if (i < (aAcronymSuggestions.length-1))
+					strMsg = strMsg + ", ";
+			}
+		}
+		else
+		{
+			aAcronymSuggestions[0] = $(strSelector).val().substr(0,1).toUpperCase();
+			aAcronymSuggestions[0] = aAcronymSuggestions[0] + $(strSelector).val().substr(1).replace(/[aeiouy]/g,"").toUpperCase();
+			strMsg = strMsg + "<a href='javascript:void(0);'>" + aAcronymSuggestions[0] + "</a>";
+		}
+		
+		
+		if (strLang == "e")
+		{
+			$("#acronyn-english-error")
+				.addClass("icon-error-16x16")
+				.html(strMsg);
+			$("#acronyn-english-error a").on("click",function(){
+				$("#acronymEng").val($(this).text());
+				$("#acronyn-english-error")
+					.html("")
+					.removeClass("icon-error-16x16");
+				$("#acronyn-english-error a").off("click");
+			});
+		}
+		else
+		{
+			$("#acronyn-french-error")
+				.addClass("icon-error-16x16")
+				.html(strMsg);
+			$("#acronyn-french-error a").on("click",function(){
+				$("#acronymFra").val($(this).text());
+				$("#acronyn-french-error")
+					.html("")
+					.removeClass("icon-error-16x16");
+				$("#acronyn-french-error a").off("click");
+			});
+		}
+	}
+	
+	function searchPreviousSurveyNames(strSurveyName,strLang)
+	{
+		/*$.get(
+			"filename",
+			"name="+strSurveyName,
+			function(responseText,status,xhr){
+					if (status.readyState === 4) {
+						if (status.status === 200) {
+							//if some responseText was successfully returned it means a duplicate acronym was found
+							//so the system must suggest an alternative acronym
+							if (responseText.length != 0)
+							{
+								displaySurveyNameErrorMsg(strLang)
+							}
+						}
+					} 
+				},
+			"text"
+		)*/;
+		if (strSurveyName == "Consumer Price Index")
+			displaySurveyNameErrorMsg(strLang)
+	}
+	
+	function displaySurveyNameErrorMsg(strLang)
+	{
+		var strMsg = "That name is already in use. Please enter another name."
+		if (strLang == "e")
+		{
+			$("#survey-name-english-error")
+				.addClass("icon-error-16x16")
+				.html(strMsg);
+		}
+		else
+		{
+			$("#survey-name-french-error")
+				.addClass("icon-error-16x16")
+				.html(strMsg);
+		}
+	}
+});
+-->
+</script>
+<!-- InstanceEndEditable -->
+<dl id="gcwu-date-mod" role="contentinfo">
+<dt>Date modified:</dt><dd>
+  {YYYY-MM-DD}
+</dd>
+</dl> 
+<div class="clear"></div>
+<!-- MainContentEnd -->
+</div></div>
+</div></div>
+
+<div id="wb-foot"><div id="wb-foot-in"><footer><h2 id="wb-nav">Footer</h2>
+<!-- FooterStart -->
+<nav role="navigation"><div id="gcwu-sft"><h3>Site footer</h3><div id="gcwu-sft-in">
+<div id="gcwu-tctr">
+<ul>
+<li class="gcwu-tc"><a href="#" target="_blank" rel="license">Terms and conditions</a></li>
+<li class="gcwu-tr"><a href="#" target="_blank">Transparency</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+<div class="span-2"><div class="gcwu-col-head"><a href="#" target="_blank">About us</a></div></div>
+<div class="span-2"><div class="gcwu-col-head"><a href="#" target="_blank">Contact us</a></div></div>
+</div></div></nav>
+
+<nav role="navigation"><div id="gcwu-gcft"><h3>Government of Canada footer</h3><div id="gcwu-gcft-in"><div id="gcwu-gcft-fip">
+<ul>
+<li><a target="_blank" rel="external" href="http://healthycanadians.gc.ca/index-eng.php"><span>Health</span><br />healthycanadians.gc.ca</a></li>
+<li><a target="_blank" rel="external" href="http://www.voyage.gc.ca/index-eng.asp"><span>Travel</span><br />travel.gc.ca</a></li>
+<li><a target="_blank" rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml"><span>Service Canada</span><br />servicecanada.gc.ca</a></li>
+<li><a target="_blank" rel="external" href="http://www.jobbank.gc.ca/intro-eng.aspx"><span>Jobs</span><br />jobbank.gc.ca</a></li>
+<li><a target="_blank" rel="external" href="http://actionplan.gc.ca/en"><span>Economy</span><br />actionplan.gc.ca</a></li>
+<li id="gcwu-gcft-ca"><div><a target="_blank" rel="external" href="http://www.canada.gc.ca/menu-eng.html">Canada.gc.ca</a></div></li>
+</ul>
+</div></div></div></nav>
+<!-- FooterEnd -->
+</footer>
+</div></div></div>
+
+<!-- ScriptsStart -->
+<script src="../../dist/theme-gcwu-fegc/js/theme-min.js"></script>
+<script src="../../dist/js/settings.js"></script>
+<script src="../../dist/js/pe-ap-min.js"></script>
+<!-- ScriptsEnd -->
+</body>
+<!-- InstanceEnd --></html>

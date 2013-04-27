@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       
+    <bean id="applicationContextProvider" class="ca.statcan.icos.sandbox.ApplicationContextProvider"/>
+
+    <bean id="sandBoxDataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource">
+        <property name="driverClassName" value="org.h2.Driver"/>
+        <property name="url" value="jdbc:h2:mem:test;DB_CLOSE_DELAY=-1"/>
+        <property name="suppressClose" value="true" />
+    </bean>
+    
+    <!-- Support for JPA related annotation support (@PersistenceUnit and @PersistenceContext) -->
+    <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+
+    <!-- JPA Entity Manager configuration -->
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+		lazy-init="true">
+		<property name="persistenceUnitName" value="sandBox" />	   
+        <property name="dataSource" ref="sandBoxDataSource" />
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+				<property name="database" value="H2" />
+				<property name="showSql" value="true" />
+				<property name="generateDdl" value="true" />
+			</bean>
+		</property>
+		<property name="jpaPropertyMap">
+			<props>
+				<prop key="hibernate.archive.autodetection">class</prop>
+				<prop key="hibernate.cache.use_second_level_cache">false</prop>
+				<prop key="hibernate.cache.use_query_cache">false</prop>
+				<!--  Second Level Cache : EHCache in dev
+				<prop key="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</prop> -->
+                <prop key="hibernate.hbm2ddl.auto">create</prop>
+                <prop key="hibernate.format_sql">true</prop>
+             </props>
+       	</property>
+	</bean>
+
+	<bean id="transactionManager" name="springTransactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+
+    <import resource="classpath:META-INF/applicationContext-core.xml" />
+	<import resource="classpath:META-INF/applicationContext-web.xml" />
+
+</beans>

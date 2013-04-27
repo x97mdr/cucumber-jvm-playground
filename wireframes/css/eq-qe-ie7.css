@@ -1,0 +1,38 @@
+@charset "utf-8";
+ 
+/** Screen and print CSS **/
+@media screen,print {
+}
+
+/** Screen-only CSS **/
+@media screen {
+	
+	div#login input#sac {
+		width: 9.5em;
+	}
+
+	
+	h1 .surveyTitle {
+		margin-bottom: 0px;
+	}
+
+	#cn-btn input, .cn-help-btn input {
+		padding-top: 4px;
+		padding-bottom: 4px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.cn-qt .cn-qt-content .clarification {
+		width: 100%;
+	}
+	
+	.cn-qt-answer fieldset div, .cn-qt-answer > div, .cn-qt-answer .grandtotal {
+		float: none;
+	}
+
+}
+
+/** Print-only CSS **/
+@media print {
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@media screen,print {
+	
+}
+
+/** Screen-only CSS **/
+@media screen {
+	.cn-qt .cn-qt-content .txt p, .cn-qt .cn-qt-content .clarification {
+		width: 93%;
+		margin-left: 3%;
+	}
+	
+	.cn-qt-answer fieldset div label {
+		float: left;
+	}
+}
+
+/** Print-only CSS **/
+@media print {
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+     "-//Puppy Crawl//DTD Suppressions 1.0//EN"
+     "http://www.puppycrawl.com/dtds/suppressions_1_0.dtd">
+
+<suppressions>
+	<suppress checks=".*" files="ca\\statcan\\census\\fms\\hibernate\\.*" />
+	<suppress checks=".*" files="org\\displaytag\\localization\\.*" />
+	<suppress checks=".*" files="org\\apache\\struts2\\util\\.*" />
+	<suppress checks=".*" files="ca\\statcan\\census\\fms\\hibernate\\.*" />
+	<suppress checks=".*" files="ca\\statcan\\census\\fms\\castor\\.*" />
+	<suppress checks=".*" files="org\\hibernate\\cache\\.*" />
+	<suppress checks=".*" files="src\\test\\java\\*" />
+</suppressions>

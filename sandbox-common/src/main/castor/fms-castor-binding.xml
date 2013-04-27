@@ -1,0 +1,14 @@
+<binding xmlns="http://www.castor.org/SourceGenerator/Binding"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:schemaLocation="http://www.castor.org/SourceGenerator/Binding http://www.castor.org/binding.xsd"
+    defaultBinding="element">
+
+    <!-- Pay related bindings -->
+	<elementBinding name="/fms_claims_verification">
+		<java-class package="ca.statcan.census.fms.castor.pay.verification" />
+	</elementBinding>
+
+	<elementBinding name="/fms_claims_verification/claim_information">
+		<java-class package="ca.statcan.census.fms.castor.pay.verification" />
+	</elementBinding>
+</binding>
